@@ -1,15 +1,8 @@
 .cart-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-column-gap: 2%;
     margin: 2% 6.4%;
-}
-
-@media(maxw-width: 90) {
-    .cart-container {
-        display: grid;
-        margin: 2% 6.4%;
-    }
 }
 
 .cart-title, .order-info-title {

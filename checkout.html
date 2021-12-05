@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index_style.css">
-    <link rel="stylesheet" href="./assets/css/cart_style.css">
+    <link rel="stylesheet" href="./assets/css/checkout_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -131,83 +131,6 @@
         
         <div class="cart-container">
             <div>
-                <h4 class="cart-title">Giỏ hàng</h4>
-                <div class="cart">
-                    <div style="text-align: left;">Sản phẩm</div>
-                    <div>Đơn giá</div>
-                    <div>Số lượng</div>
-                    <div>Thành tiền</div>
-                    <div>Xóa khỏi giỏ</div>
-                </div>
-                <div class="cart-product-container">
-                    <div class="cart-product">
-                        <div class="cart-info" style="text-align: left;">
-                            <div>
-                                <img src="/assets/img/Product/Apple.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Táo đỏ New Zealand</b><br>
-                                0.5KG
-                            </div>
-                        </div>
-                        <div>49.000 VNĐ</div>
-                        <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="1" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
-                        </div>
-                        <div>49.000 VNĐ</div>
-                        <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
-                        </div>
-                    </div>
-                    <div class="cart-product">
-                        <div class="cart-info" style="text-align: left;">
-                            <div>
-                                <img src="/assets/img/Product/Carrot.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Cà rốt Đà Lạt</b><br>
-                                0.5KG
-                            </div>
-                        </div>
-                        <div>19.000 VNĐ</div>
-                        <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="2" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
-                        </div>
-                        <div>38.000 VNĐ</div>
-                        <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="order-info-title">Đơn hàng</h4>
-                <div class="address">
-                    <table width="100%" style="margin-top: 2%;">
-                        <tr>
-                            <td class="shipment-title"><b>Giao tới</b></td>
-                            <td class="change-title">
-                                <span>
-                                    <a href="#">
-                                        Thay đổi
-                                        <i class="fas fa-chevron-right" style="margin-left: 1px;"></i>
-                                    </a>
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="customer-info">
-                        <p><b><i>Nguyễn Scrum</i></b></p>
-                        <p style="margin-top: 1%;">0123 456 789</p>
-                        <p style="margin-top: 1%;">669 Quốc lộ 1, Khu phố 3, Phường Linh Xuân, TP. Thủ Đức, TP.HCM</p>
-                    </div>
-                </div>
-    
                 <div class="payment">
                     <div class="payment-title">
                         <b>Phương thức thanh toán</b>
@@ -247,22 +170,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="voucher">
-                    <div class="voucher-title">
-                        <b>Voucher</b>
-                    </div>
-                    <div class="voucher-info">
-                        <div>
-                            <input type="text" placeholder="Nhập vào mã giảm giá" class="input-voucher">
-                        </div>
-                        <div>
-                            <input type="button" value="Áp dụng" class="apply">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-    
+            <div>
                 <div class ="order-price">
                     <div class="order-price-info">
                         <div style="margin-top: 1%;">
@@ -276,12 +186,6 @@
                         </div>
                         <div style="text-align: right; margin-top: 2%;">
                             <p><b>-20.000 VND</b></p>
-                        </div>
-                        <div style="margin-top: 2%;">
-                            <p>Phí vận chuyển</p>
-                        </div>
-                        <div style="text-align: right; margin-top: 2%;">
-                            <p><b>+10.000 VND</b></p>
                         </div>
                     </div>
                     <hr class="line">
