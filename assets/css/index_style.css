@@ -991,19 +991,18 @@ input:focus~.left {
 .footer-body {
     background-color: #00B761;
     margin-top: 30px;
-    /* border-radius: 50px 50px 0px 0px; */
+    border-radius: 50px 50px 0px 0px;
     padding-top: 30px;
-    width: 100%;
-    margin-left: 0 !important;
 }
 
-.footer-address {
-    padding: 20px 20px 20px 70px;
+.footer-section {
+    padding: 10px 10px 10px 70px;
     margin-right: -25px;
 }
 
 .footer-title {
     color: white;
+    font-size: 17px;
     font-weight: bolder;
     margin-bottom: 10px;
 }
@@ -1013,7 +1012,7 @@ input:focus~.left {
     background: white;
     border: 0;
     height: 2px;
-    width: 200px;
+    width: 100px;
 }
 
 .footer-content {
@@ -1026,26 +1025,40 @@ input:focus~.left {
 .footer-infor {
     text-decoration: none;
     color: white;
+    font-size: 13px;
 }
 
 .footer-infor:hover {
-    /* text-decoration: underline; */
+    text-decoration: underline;
     cursor: pointer;
 }
 
 .socials-list {
-    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 .socials-list-icon {
     color: white;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
 }
 
 .socials-list-icon:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.5);
+}
+
+.payment-list img {
+    width: 30px;
+    margin-right: 10px;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.payment-list img:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.5);
 }
@@ -1094,7 +1107,6 @@ input:focus~.left {
 .form-send:hover {
     cursor: pointer;
 }
-
 
 /* css for content end */
 
