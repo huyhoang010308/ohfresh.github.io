@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 2%;
-    margin: 2% 4.5%;
+    margin: 2% 6.4%;
 }
 
 .cart-title, .order-info-title {
