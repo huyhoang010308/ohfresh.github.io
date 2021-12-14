@@ -39,7 +39,7 @@
     height:fit-content;
     padding: 30px 40px;
     margin: 10px 20px;
-    box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 .right-row{
@@ -53,17 +53,19 @@
 }
 .tab-content{
     padding: 30px 50px;
-    box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
 }
 .card-title{
     margin-bottom: 15px;
+    color: #00B761;
+    
 }
 .card-password{
     margin-top: 20px;
     padding: 20px 20px;
-    box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
 .myaccount-page img{
@@ -72,6 +74,10 @@
 .icon-edit-profile{
     width: 10px;
     height: 10px;
+}
+.profile-infor{
+    padding-bottom: 20px;
+    
 }
 .profile-infor-overview td{
     padding:10px 0px;
@@ -87,12 +93,15 @@
     font-size: 16px;
     border-radius: 0px;
     cursor: pointer;
-    font-weight: bold
+    font-weight: bold;
 }
-.list-group-item:hover{
-    background: #00B761;
-    border-color: transparent;
-    color: #fff; 
+.list-group-item:hover a{
+    color: #00B761;
+}
+.profile-name{
+    color: #00B761;
+    font-size: 18px;
+
 }
 .form-group{
     padding:10px 20px;
@@ -103,12 +112,12 @@
 
 .container input{
     border-color: rgb(241, 233, 233);
-    width: 250px;
+    width: 90%;
     height: 35px;
     border: 1.5px solid #ddd;
     border-radius: 5px;
     padding: 5px 10px;
-    margin: 10px 0px;
+    margin: 10px 00px;
 }
 .form-group input{
     border-color: rgb(241, 233, 233);
