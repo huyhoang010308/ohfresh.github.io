@@ -105,6 +105,7 @@
     font-size: 18px;
     width: 60%;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .back {
@@ -166,6 +167,7 @@
     font-size: 18px;
     width: 100%;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -195,4 +197,5 @@
     font-size: 18px;
     width: 100%;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
