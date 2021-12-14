@@ -13,7 +13,12 @@ body{
     max-width: 1000px;
     /*margin: 0px auto;
 }*/
-img{
+
+.card-wrapper{
+    margin: 0 100px;
+    padding: 0;
+}
+.card-wrapper img{
     width: 60%;
     display: block;
 }
