@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index_style.css">
-    <link rel="stylesheet" href="./assets/css/cart_style.css">
+    <link rel="stylesheet" href="./assets/css/blogDetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/img/LOGO.svg" type="img/x-icon" />
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
-    <title>Giỏ hàng</title>
-
+    <title>"Eatclean và những điều cần lưu ý"</title>
 </head>
 
 <body>
@@ -128,147 +127,7 @@
             </div>
         </div>
         
-        <div id="cart-container">
-            <div class="cart-info-container">
-                <div class="cart-title">
-                    <h4>GIỎ HÀNG</h4>
-                </div>
-                <div class="cart">
-                    <div>SẢN PHẨM</div>
-                    <div>ĐƠN GIÁ</div>
-                    <div>SỐ LƯỢNG</div>
-                    <div>THÀNH TIỀN</div>
-                    <div>XÓA</div>
-                </div>
-                <div class="cart-product-container">
-                    <div class="cart-product">
-                        <div class="cart-info" style="text-align: left;">
-                            <div>
-                                <img src="/assets/img/Product/Apple.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Táo đỏ New Zealand</b><br>
-                                0.5KG
-                            </div>
-                        </div>
-                        <div>49.000 VNĐ</div>
-                        <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="1" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
-                        </div>
-                        <div>49.000 VNĐ</div>
-                        <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
-                        </div>
-                    </div>
-                    <div class="line"></div>
 
-                    <div class="cart-product">
-                        <div class="cart-info" style="text-align: left;">
-                            <div>
-                                <img src="/assets/img/Product/Carrot.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Cà rốt Đà Lạt</b><br>
-                                0.5KG
-                            </div>
-                        </div>
-                        <div>19.000 VNĐ</div>
-                        <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="2" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
-                        </div>
-                        <div>38.000 VNĐ</div>
-                        <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
-                        </div>
-                    </div>
-                    <div class="line"></div>
-
-                    <div class="cart-product">
-                        <div class="cart-info" style="text-align: left;">
-                            <div>
-                                <img src="/assets/img/Product/Blueberry.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Việt quất Úc</b><br>
-                                1KG
-                            </div>
-                        </div>
-                        <div>99.000 VNĐ</div>
-                        <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="1" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
-                        </div>
-                        <div>99.000 VNĐ</div>
-                        <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                </div>
-                <div class="other">
-                    <button class="remove-all">XÓA HẾT</button>
-                    <button class="back">QUAY LẠI MUA HÀNG</button>
-                </div>
-            </div>
-            
-            <div>
-                <div class="order-info">
-                    <h4 class="order-info-title">ĐƠN HÀNG</h4>
-                    <hr class="divider">
-                    <div class="voucher">
-                        <div class="voucher-title">
-                            <b>MÃ GIẢM GIÁ</b>
-                        </div>
-                        <div class="voucher-info">
-                            <div>
-                                <input type="text" placeholder="Nhập vào mã giảm giá" class="input-voucher">
-                            </div>
-                            <div>
-                                <input type="button" value="ÁP DỤNG" class="apply">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="divider">
-
-                    <div class="order-price">
-                        <div class="order-price-info">
-                            <div style="margin: 2.5% 0;">
-                                <p>Đơn hàng</p>
-                            </div>
-                            <div style="text-align: right; margin: 2.5% 0;">
-                                <p><b>186.000 VNĐ</b></p>
-                            </div>
-                            <div style="margin: 2.5% 0;">
-                                <p>Giảm</p>
-                            </div>
-                            <div style="text-align: right; margin: 2.5% 0;">
-                                <p><b>-20.000 VNĐ</b></p>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="order-price-info">
-                            <div>
-                                <p><b>TẠM TÍNH</b></p>
-                            </div>
-                            <div style="text-align: right;">
-                                <p style="font-size: 20px;"><b>166.000 VNĐ</b></p>
-                                <p style="margin: 5% 0">(Đã bao gồm thuế VAT)</p>
-                            </div>
-                        </div>
-                        <a href="/checkout.html">
-                            <input type="button" value="TIẾN HÀNH THANH TOÁN" class="process">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div id="footer">
             <div class="row footer-body">

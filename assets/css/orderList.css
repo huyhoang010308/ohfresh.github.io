@@ -650,7 +650,7 @@ thead {
     -moz-appearance: none;
     appearance: none;
 
-    background-image: url('/assets/font-awesome/svgs/solid/arrow-down.svg');
+    background-image: url('/assets/font-awesome/svgs/solid/angle-down.svg');
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 16px 12px;
