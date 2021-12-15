@@ -1,86 +1,100 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
-
-*{
+* {
     font-family: 'Montserrat', serif;
 }
 
-.container{
+:root {
+    --primary_green: #00B761;
+    --primary_orange: #FF9330;
+    --primary_gray: #686874;
+    --light-gray: #C8C8D5;
+}
+
+.container {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     width: 80%;
     background: white;
-    
 }
-.heading{
+
+.heading {
     padding: 10px 20px;
 }
-.img-avatar{
+
+.img-avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.icon-list-group{
+
+.icon-list-group {
     width: 10px;
     height: 10px;
     margin-right: 5px;
 }
-.content{
+
+.content {
     display: flex;
-    
 }
+
 .icon {
     margin-right: 10px;
 }
-.left-row{
-    height:fit-content;
+
+.left-row {
+    height: fit-content;
     padding: 30px 40px;
     margin: 10px 20px;
     box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
     border-radius: 10px;
 }
-.right-row{
+
+.right-row {
     padding: 20px 40px;
     margin: -10px 0px;
     font-weight: bold;
     clear: right;
     width: 100%;
     border-radius: 10px;
-
 }
-.tab-content{
+
+.tab-content {
     padding: 30px 50px;
     box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
     border-radius: 10px;
-
 }
-.card-title{
+
+.card-title {
     margin-bottom: 15px;
 }
-.card-password{
+
+.card-password {
     margin-top: 20px;
     padding: 20px 20px;
     box-shadow: 0 1px 15px 1px rgba(140, 212, 177, 0.89);
 }
 
-.myaccount-page img{
+.myaccount-page img {
     margin-right: 10px;
 }
-.icon-edit-profile{
+
+.icon-edit-profile {
     width: 10px;
     height: 10px;
 }
-.profile-infor-overview td{
-    padding:10px 0px;
+
+.profile-infor-overview td {
+    padding: 10px 0px;
     width: 300px;
 }
+
 .list-group-item {
-    vertical-align:middle;
+    vertical-align: middle;
     padding: 0px 20px;
-    margin: 0px;          
+    margin: 0px;
     width: 250px;
     height: 60px;
     line-height: 60px;
@@ -89,19 +103,24 @@
     cursor: pointer;
     font-weight: bold
 }
-.list-group-item:hover{
-    background: #00B761;
-    border-color: transparent;
-    color: #fff; 
-}
-.form-group{
-    padding:10px 20px;
-}
-.card-body{
-    padding:10px 20px;
+
+.list-group-item:hover {
+    background-color: var(--light-gray);
 }
 
-.container input{
+.list-group-item:hover a {
+    color: #00B761;
+}
+
+.form-group {
+    padding: 10px 20px;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.container input {
     border-color: rgb(241, 233, 233);
     width: 250px;
     height: 35px;
@@ -110,7 +129,8 @@
     padding: 5px 10px;
     margin: 10px 0px;
 }
-.form-group input{
+
+.form-group input {
     border-color: rgb(241, 233, 233);
     width: 500px;
     height: 35px;
@@ -119,13 +139,14 @@
     padding: 5px 10px;
     margin: 10px 0px;
 }
-.container button{
+
+.container button {
     background: #00B761;
     border-color: #ddd;
     border-radius: 10px;
     text-align: center;
     color: #fff;
-    padding:10px 20px;
+    padding: 10px 20px;
     outline: 0;
     margin-right: 2px;
     margin-bottom: 10px;
@@ -136,10 +157,12 @@
     border: none;
     font-weight: bold;
 }
-.container button:hover{
+
+.container button:hover {
     opacity: 80%;
 }
-.password-body{
+
+.password-body {
     margin-top: 30px;
     padding-top: 30px;
 }

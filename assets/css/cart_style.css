@@ -5,11 +5,11 @@
     margin: 2% 4.5%;
 }
 
-.cart-title, .order-info-title {
+.cart-title,
+.order-info-title {
     color: #00B761;
     font-size: 25px;
 }
-
 
 .cart-title {
     width: 100%;
@@ -56,7 +56,8 @@
     text-align: center;
 }
 
-.quantity-box button, .quantity-box input {
+.quantity-box button,
+.quantity-box input {
     height: 35px;
     width: 35px;
     border: none;
@@ -92,7 +93,8 @@
     margin: 5% 0 2.5% 0;
 }
 
-.remove-all, .back {
+.remove-all,
+.back {
     background-color: #00B761;
     font-weight: bolder;
     color: white;
@@ -123,11 +125,12 @@
     margin: 3% 0 5% 0;
 }
 
-.voucher, .order-price {
+.voucher,
+.order-price {
     margin: 5% 0;
 }
 
-.voucher-title { 
+.voucher-title {
     font-size: 20px;
 }
 
@@ -138,13 +141,13 @@
 }
 
 .input-voucher {
-    border-radius: 10px 0 0 10px;  
-    border: 2px solid #00B761; 
-    background-color: white; 
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #00B761;
+    background-color: white;
     color: black;
     font-style: bold;
-    text-align: center; 
-    width: 100%; 
+    text-align: center;
+    width: 100%;
     height: 45px;
     font-size: 18px;
 }
@@ -167,7 +170,6 @@
     width: 100%;
     cursor: pointer;
 }
-
 
 .order-price-info {
     display: grid;

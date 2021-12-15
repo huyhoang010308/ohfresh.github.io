@@ -70,15 +70,20 @@ body {
     height: 81px;
     position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container1 #location-search {
+    display: flex;
     align-items: center;
 }
 
 #container1 #location {
     display: flex;
-    margin-right: 40px;
     width: 255px;
+    margin-right: 20px;
     float: left;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -98,7 +103,7 @@ body {
 }
 
 .search-wrapper {
-    width: 500px;
+    width: 400px;
     position: relative;
 }
 
@@ -216,14 +221,18 @@ input:focus~.left {
     flex: 0.5;
 }
 
-.link {
-    display: flex;
+
+/* .link {
     margin-left: 40px;
     float: left;
+} */
+
+.link div {
+    display: inline-block;
 }
 
 .link a {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
@@ -236,13 +245,13 @@ input:focus~.left {
 }
 
 #container1 .notification {
-    display: flex;
-    padding: 0 15px;
+    /* display: flex; */
+    padding: 0 12px;
 }
 
 #container1 .shopping-cart {
-    display: flex;
-    padding: 0 15px;
+    /* display: flex; */
+    padding: 0 12px;
     /* width: 100px;
     right: 150px; */
     /* align-items: flex-end;
@@ -251,23 +260,33 @@ input:focus~.left {
 }
 
 #container1 .my-account {
-    display: flex;
-    padding-left: 15px;
+    /* display: flex; */
+    padding-left: 12px;
     /* justify-content: space-between; */
     color: var(--primary_gray);
 }
 
 #container2 {
     height: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     position: relative;
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
     vertical-align: middle;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-basis: 100%;
+}
+
+#container2-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container2-right div {
+    display: inline-block;
 }
 
 #container2 a {
@@ -361,12 +380,11 @@ input:focus~.left {
 
 #container2 .hotline {
     vertical-align: middle;
-    width: 110px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 18px;
-    align-items: flex-end;
+    margin-right: 1rem;
 }
 
 #container2 .hotline img {
@@ -530,7 +548,7 @@ input:focus~.left {
 /* css for content start */
 
 #content {
-    margin: 0 7%;
+    margin: 0 auto;
     /* position: relative; */
 }
 
@@ -594,7 +612,7 @@ input:focus~.left {
 
 .row {
     margin-left: -8px;
-    margin-right: -8px;
+    /* margin-right: -8px; */
 }
 
 .row::after {
@@ -1107,6 +1125,7 @@ input:focus~.left {
 .form-send:hover {
     cursor: pointer;
 }
+
 
 /* css for content end */
 
