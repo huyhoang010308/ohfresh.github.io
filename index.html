@@ -120,7 +120,7 @@
                         <li><a href="#" class="now">Trang chủ</a></li>
                         <li><a href="#">Khuyến mãi</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="/AboutUs.html">Về chúng tôi</a></li>
                         <li><a href="#">Liên hệ</a></li>
                     </ul>
                 </div>
@@ -190,6 +190,7 @@
         </div>
 
         <div id="content">
+            <!-- CATEGORIES START -->
             <div class="category">
                 <div class="category-iem">
                     <a href="">
@@ -226,10 +227,11 @@
                     </a>
                 </div>
             </div>
+            <!-- CATEGORIES END -->
 
             <div id="best-selling" class="row best-selling-list">
                 <h2 class="section-heading">SẢN PHẨM NỔI BÂT</h2>
-                <table>
+                <table id="product-box">
                     <td>
                         <a href=""><i class="fas fa-chevron-left best-selling-arrow"></i></a>
                     </td>
@@ -277,6 +279,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </td>
                     <td>
                         <a href=""><i class="fas fa-chevron-right best-selling-arrow"></i></a>
@@ -286,7 +290,7 @@
 
             <div id="best-selling" class="row best-selling-list">
                 <h2 class="section-heading">SẢN PHẨM BÁN CHẠY</h2>
-                <table>
+                <table id="product-box">
                     <td>
                         <a href=""><i class="fas fa-chevron-left best-selling-arrow"></i></a>
                     </td>
@@ -343,108 +347,117 @@
 
             <div id="new-product" class="row new-product-list">
                 <h2 class="section-heading">SẢN PHẨM MỚI</h2>
-                <div class="col col-half">
-                    <table class="new-product-border">
-                        <tbody>
-                            <td class="new-product-img-border">
-                                <img src="/assets/img/Product/Carrot.png" alt="" class="new-product-img">
-                            </td>
-                            <td>
-                                <div class="new-product-body">
-                                    <h3 class="new-product-name">Cà rốt Đà Lạt</h3>
-                                    <p class="new-product-unit">Đơn vị: KG</p>
-                                    <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
+                <div id="wrapper-product">
+                    <div class="col col-half">
+                        <table class="new-product-border">
+                            <tbody>
+                                <td class="new-product-img-border">
+                                    <img src="/assets/img/Product/Carrot.png" alt="" class="new-product-img">
+                                </td>
+                                <td>
+                                    <div class="new-product-body">
+                                        <h3 class="new-product-name">Cà rốt Đà Lạt</h3>
+                                        <p class="new-product-unit">Đơn vị: KG</p>
+                                        <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col col-half">
-                    <table class="new-product-border">
-                        <tbody>
-                            <td class="new-product-img-border">
-                                <img src="/assets/img/Product/Blueberry.png" alt="" class="new-product-img">
-                            </td>
-                            <td>
-                                <div class="new-product-body">
-                                    <h3 class="new-product-name">Blueberry</h3>
-                                    <p class="new-product-unit">Đơn vị: KG</p>
-                                    <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
+                    <div class="col col-half">
+                        <table class="new-product-border">
+                            <tbody>
+                                <td class="new-product-img-border">
+                                    <img src="/assets/img/Product/Blueberry.png" alt="" class="new-product-img">
+                                </td>
+                                <td>
+                                    <div class="new-product-body">
+                                        <h3 class="new-product-name">Blueberry</h3>
+                                        <p class="new-product-unit">Đơn vị: KG</p>
+                                        <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col col-half">
-                    <table class="new-product-border">
-                        <tbody>
-                            <td class="new-product-img-border">
-                                <img src="/assets/img/Product/Cauliflower.png" alt="" class="new-product-img">
-                            </td>
-                            <td>
-                                <div class="new-product-body">
-                                    <h3 class="new-product-name">Bông cải trắng</h3>
-                                    <p class="new-product-unit">Đơn vị: KG</p>
-                                    <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
+                    <div class="col col-half">
+                        <table class="new-product-border">
+                            <tbody>
+                                <td class="new-product-img-border">
+                                    <img src="/assets/img/Product/Cauliflower.png" alt="" class="new-product-img">
+                                </td>
+                                <td>
+                                    <div class="new-product-body">
+                                        <h3 class="new-product-name">Bông cải trắng</h3>
+                                        <p class="new-product-unit">Đơn vị: KG</p>
+                                        <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col col-half">
-                    <table class="new-product-border">
-                        <tbody>
-                            <td class="new-product-img-border">
-                                <img src="/assets/img/Product/Apple.png" alt="" class="new-product-img">
-                            </td>
-                            <td>
-                                <div class="new-product-body">
-                                    <h3 class="new-product-name">Táo</h3>
-                                    <p class="new-product-unit">Đơn vị: KG</p>
-                                    <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
+                    <div class="col col-half">
+                        <table class="new-product-border">
+                            <tbody>
+                                <td class="new-product-img-border">
+                                    <img src="/assets/img/Product/Apple.png" alt="" class="new-product-img">
+                                </td>
+                                <td>
+                                    <div class="new-product-body">
+                                        <h3 class="new-product-name">Táo</h3>
+                                        <p class="new-product-unit">Đơn vị: KG</p>
+                                        <p class="price"><del>30.000 vnđ</del><span class="sale-price"> 19.000 vnđ</span></p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <button onclick="window.location.href=''" class="discover-more-button more-product-button">Discover More</button>
+                <div>
+                    <button onclick="window.location.href=''" class="discover-more-button more-product-button">Discover More</button>
+                </div>
             </div>
 
             <div id="lastest-post" class="row lastest-post-list">
                 <h2 class="section-heading lastest-post">BÀI VIẾT MỚI NHẤT</h2>
-                <div class="col col-half">
-                    <table class="lastest-post-border" style="background-image: url('/assets/img/Blog/Blog.jpg')">
-                        <tbody>
-                            <td></td>
-                            <td width=50%>
-                                <div class="lastest-post-body">
-                                    <h3 class="lastest-post-name">"EATCLEAN" <br> VÀ NHỮNG ĐIỀU <br> CẦN LƯU Ý</h3>
-                                    <hr class="lastest-post-hr">
-                                    <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
+                <div id="wrapper-blog">
+                    <div class="col col-half blogthumb">
+                        <table class="lastest-post-border" style="background-image: url('/assets/img/Blog/Blog.jpg')">
+                            <tbody>
+                                <td></td>
+                                <td width=50%>
+                                    <div class="lastest-post-body">
+                                        <h3 class="lastest-post-name">"EATCLEAN" <br> VÀ NHỮNG ĐIỀU <br> CẦN LƯU Ý</h3>
+                                        <hr class="lastest-post-hr">
+                                        <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col col-half">
-                    <table class="lastest-post-border" style="background-image: url('/assets/img/Blog/Eatclean.jpg')">
-                        <tbody>
-                            <td></td>
-                            <td width=50%>
-                                <div class="lastest-post-body">
-                                    <h3 class="lastest-post-name">HỌC CÁCH <br> XÂY DỰNG MỘT <br> LỐI SỐNG XANH</h3>
-                                    <hr class="lastest-post-hr">
-                                    <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
+                    <div class="col col-half blogthumb">
+                        <table class="lastest-post-border" style="background-image: url('/assets/img/Blog/Eatclean.jpg')">
+                            <tbody>
+                                <td></td>
+                                <td width=50%>
+                                    <div class="lastest-post-body">
+                                        <h3 class="lastest-post-name">HỌC CÁCH <br> XÂY DỰNG MỘT <br> LỐI SỐNG XANH</h3>
+                                        <hr class="lastest-post-hr">
+                                        <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <button onclick="window.location.href=''" class="discover-more-button more-blog-button">Discover More</button>
+                <div style="display: block;">
+                    <button onclick="window.location.href=''" class="discover-more-button more-blog-button">Discover More</button>
+
+                </div>
             </div>
 
             <div id="client" class="row client-list">
