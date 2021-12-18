@@ -14,6 +14,24 @@
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
     <title>Tài Khoản</title>
 
+    <script>
+        function edit(){
+            document.getElementById("inputinfor").disabled = false;
+            document.getElementById("inputinforgmail").disabled = false;
+            document.getElementById("inputinforphone").disabled = false;
+            document.getElementById("inputinforaddress").disabled = false;
+        }
+
+        function saveprofile(){
+            document.getElementById("inputinfor").disabled = true;
+            document.getElementById("inputinforgmail").disabled = true;
+            document.getElementById("inputinforphone").disabled = true;
+            document.getElementById("inputinforaddress").disabled = true;
+
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -145,7 +163,7 @@
                                     <td>
                                         <span>
                                             <img class="icon-edit-profile" src="/assets/img/admin/ava_admin.jpg" />
-                                            <a class="profile-edit" href="#">Chỉnh sửa</a>
+                                            <a onclick="edit()" class="profile-edit" href="#">Chỉnh sửa</a>
                                         </span>
                                     </td>
                                 </tr>
@@ -155,7 +173,7 @@
                             <div class="list-group list-group-flush" role="tablist">
                                 <div  class="list-group-item"  href="#account" role="tab">
                                     <div class="notification">
-                                        <a href="#">
+                                        <a href="#" style="color: #00B761;;">
                                             <span class="icon"><i class="fas fa-user-circle"></i></i>
                                             </span>
                                             <span>Tài khoản</span>
@@ -228,23 +246,23 @@
                             <div class="card-body">
                                 <table class="profile-infor-overview">
                                     <tr>
-                                        <td>Họ và Tên <br/> <input class="profile-infor-textbox" type="text" value="Oh!Fresh Store " disabled> </td>
-                                        <td>Gmail <br/> <input class="profile-infor-textbox" type="text" value="Oh!Fresh@gmail.com" disabled> </td>
+                                        <td>Họ và Tên <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="Oh!Fresh Store " disabled> </td>
+                                        <td>Gmail <br/> <input id="inputinforgmail" class="profile-infor-textbox" type="text" value="Oh!Fresh@gmail.com" disabled> </td>
                                                             
                                     </tr>
                     
                                     <tr>
-                                        <td>Username <br/> <input class="profile-infor-textbox" type="text" value="ohfreshteam " disabled> </td>
-                                        <td>Số điện thoại <br/> <input class="profile-infor-textbox" type="text" value="012345678" disabled> </td>
+                                        <td>Username <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="ohfreshteam " disabled> </td>
+                                        <td>Số điện thoại <br/> <input id="inputinforphone" class="profile-infor-textbox" type="text" value="012345678" disabled> </td>
                                     </tr>
                             
                                     <tr>
-                                        <td colspan="2">Địa chỉ <br/> <input class="profile-infor-textbox" type="text" value="1111 Quốc Lộ 1A, Thủ Đức, TPHCM" disabled> </td>                        
+                                        <td colspan="2">Địa chỉ <br/> <input id="inputinforaddress" class="profile-infor-textbox" type="text" value="1111 Quốc Lộ 1A, Thủ Đức, TPHCM" disabled> </td>                        
                                     </tr>
                                                                                                                 
                                     <tr>
                                         <td colspan="2" class="profile-infor-textbox">
-                                            <button>Lưu</button>
+                                            <button onclick="saveprofile()">Lưu</button>
                                         </td>
                                     </tr>
                                 
