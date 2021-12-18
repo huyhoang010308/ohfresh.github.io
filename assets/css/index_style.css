@@ -7,6 +7,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -45,7 +46,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 #header a {
@@ -170,7 +171,7 @@ input:focus~.bottom {
     transform: scaleX(1);
 }
 
-.right {
+list .right {
     right: 0;
     transform-origin: top right;
 }
@@ -854,6 +855,7 @@ input:focus~.left {
 .more-product-button {
     color: #00B761;
     background-color: white;
+    z-index: 0;
 }
 
 .more-product-button::before {
@@ -961,6 +963,7 @@ input:focus~.left {
 .more-blog-button {
     color: white;
     background-color: #00B761;
+    z-index: 0;
 }
 
 .more-blog-button::before {
@@ -1025,7 +1028,7 @@ input:focus~.left {
 .footer-body {
     background-color: #00B761;
     margin-top: 30px;
-    border-radius: 50px 50px 0px 0px;
+    /* border-radius: 50px 50px 0px 0px; */
     padding-top: 30px;
 }
 
