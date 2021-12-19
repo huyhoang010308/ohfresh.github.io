@@ -649,6 +649,7 @@ thead {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin-left: 20px;
 
     background-image: url('/assets/font-awesome/svgs/solid/angle-down.svg');
     background-repeat: no-repeat;
