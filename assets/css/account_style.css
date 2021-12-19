@@ -60,6 +60,12 @@
     width: 100%;
     border-radius: 10px;
 }
+.profile-infor{
+    margin-bottom: 15px;
+}
+.profile-infor:hover a{
+    color: #00B761;
+}
 
 .tab-content {
     padding: 30px 50px;

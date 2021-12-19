@@ -111,17 +111,25 @@
                         <span id="select">Danh mục sản phẩm</span>
                         <i class="fas fa-chevron-down" style="margin-left: 2%;"></i>
                     </a>
+
+                    <ul class="subnav">
+                        <li><a href="">Rau, củ, quả</a></li>
+                        <li><a href="">Trái cây tươi</a></li>
+                        <li><a href="">Ngũ cốc, hạt</a></li>
+                        <li><a href="">Nấm</a></li>
+                        <li class="last-item"><a href="">Gia vị</a></li>
+                    </ul>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div id="navigation">
                     <ul id="nav">
-                        <li><a href="#" class="now">Trang chủ</a></li>
-                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="index.html" class="now">Trang chủ</a></li>
+                        <li><a href="promotion.html">Khuyến mãi</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="/AboutUs.html">Về chúng tôi</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="Contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="spacer"></div>
@@ -429,11 +437,13 @@
                             <tbody>
                                 <td></td>
                                 <td width=50%>
-                                    <div class="lastest-post-body">
-                                        <h3 class="lastest-post-name">"EATCLEAN" <br> VÀ NHỮNG ĐIỀU <br> CẦN LƯU Ý</h3>
-                                        <hr class="lastest-post-hr">
-                                        <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
-                                    </div>
+                                    <a href="/blogDetail.html" target="_blank">
+                                        <div class="lastest-post-body">
+                                            <h3 class="lastest-post-name">"EATCLEAN" <br> VÀ NHỮNG ĐIỀU <br> CẦN LƯU Ý</h3>
+                                            <hr class="lastest-post-hr">
+                                            <p class="lastest-post-date">Ngày đăng: <br>10/12/2021</p>
+                                        </div>
+                                    </a>
                                 </td>
                             </tbody>
                         </table>
@@ -774,8 +784,25 @@
                     event.stopPropagation()
                 })
                 // Js FOR POP-UP END
+
+
+            // Js for show sub-nav
+            const nav = document.querySelector('.nav-category');
+            const subNav = document.querySelector('.subnav');
+
+            function showSubNav() {
+                subNav.classList.add('showSubNav');
+            }
+
+            function hideSubNav() {
+                subNav.classList.remove('showSubNav');
+            }
+
+            nav.addEventListener('click', showSubNav);
         </script>
-        <!-- Js FOR POP-UP END -->
+
+
+
 
 
 

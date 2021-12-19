@@ -131,13 +131,8 @@
     margin: 5% 0;
 }
 
-<<<<<<< HEAD
 .voucher-title {
-    font-size: 20px;
-=======
-.voucher-title { 
     font-size: 18px;
->>>>>>> 08edfe2a006255ed9ba4198aecb0fb340dc64d60
 }
 
 .voucher-info {
@@ -205,9 +200,5 @@
     font-size: 16px;
     width: 100%;
     cursor: pointer;
-<<<<<<< HEAD
 }
-=======
-    font-family: 'Montserrat', sans-serif;
-}
->>>>>>> 08edfe2a006255ed9ba4198aecb0fb340dc64d60
+
