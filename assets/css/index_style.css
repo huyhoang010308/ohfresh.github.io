@@ -323,7 +323,7 @@ input:focus~.left {
 }
 
 .subnav.showSubNav {
-    display: block!;
+    display: block !important;
 }
 
 #container2 .subnav li {
