@@ -24,6 +24,15 @@
 
 }
 
+.num-page{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.num-page2:hover{
+    color: #00B761;
+}
+
 .func-filter {
     flex: 0 0 auto;
     width: calc(100%/6) !important;
