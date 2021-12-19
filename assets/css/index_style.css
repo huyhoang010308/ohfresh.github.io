@@ -275,7 +275,7 @@ input:focus~.left {
     flex-flow: row;
     flex-wrap: nowrap;
     vertical-align: middle;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     flex-basis: 100%;
 }
@@ -311,6 +311,43 @@ input:focus~.left {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#container2 .subnav {
+    background-color: white;
+    margin-top: 8%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
+    display: none;
+}
+
+.subnav.showSubNav {
+    display: block!;
+}
+
+#container2 .subnav li {
+    /* margin: 10px 0; */
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 0.5px solid rgba(172, 172, 172, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#container2 .subnav .last-item {
+    border-bottom: none;
+}
+
+#container2 .subnav li a {
+    display: block;
+    height: 100%;
+    font-weight: 500;
+    transition: 0.1s ease;
+}
+
+#container2 .subnav li:hover {
+    background-color: #e9ecef;
 }
 
 #nav {
@@ -410,6 +447,7 @@ input:focus~.left {
 
 #container2 .gift a {
     width: 100%;
+    margin-top: -15px;
     text-decoration: none;
     line-height: 46px;
     padding: 0 25px;
@@ -1152,6 +1190,7 @@ input:focus~.left {
 /* css for Button Scroll to Top start*/
 
 .btnScrollToTopp {
+    z-index: 1;
     position: fixed;
     right: 1.5rem;
     bottom: 2rem;
@@ -1183,6 +1222,7 @@ input:focus~.left {
 /* css for button chat start*/
 
 .show-btnFunction {
+    z-index: 1;
     position: fixed;
     right: 0.5rem;
     width: 60px;

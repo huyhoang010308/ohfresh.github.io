@@ -473,10 +473,13 @@ body {
 }
 
 #quote-section #model {
-    /* display: block; */
-    width: 200px;
     margin-left: 60px;
     margin-bottom: 0;
+}
+
+#quote-section #model-img {
+    display: block;
+    width: 200px;
 }
 
 #quote-section #quote {
@@ -495,6 +498,10 @@ body {
     font-family: VnThuPhap2;
     font-size: 42px;
     color: #ffda5f;
+}
+
+.best-selling-img {
+    transform: scale(0.8);
 }
 
 .footer-body {
