@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index_style.css">
     <link rel="stylesheet" href="./assets/css/account_style.css">
+    <link rel="stylesheet" href="./assets/css/myOrder_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -148,7 +149,6 @@
         </div>
         
         <div class="container">
-            <h1 class="heading">Tài khoản của tôi</h1>
             <div class="content">
                 <div class="left-row">
                     <div class="col-md-5 col-xl-4">
@@ -173,7 +173,7 @@
                             <div class="list-group list-group-flush" role="tablist">
                                 <div  class="list-group-item"  href="#account" role="tab">
                                     <div class="notification">
-                                        <a href="#" style="color: #00B761;;">
+                                        <a href="/myAccount.html">
                                             <span class="icon"><i class="fas fa-user-circle"></i></i>
                                             </span>
                                             <span>Tài khoản</span>
@@ -197,7 +197,7 @@
                                 
                                 <div  class="list-group-item"  href="#account" role="tab">
                                     <div class="notification">
-                                        <a href="/myOrder.html">
+                                        <a href="#" style="color: #00B761;;">
                                             <span class="icon"><i class="fas fa-shopping-bag"></i></i>
                                             </span>
                                             <span>Đơn hàng</span>
@@ -237,58 +237,175 @@
                     <div class="tab-content">
                         <div class="card">
                             <div class="card-header">
-                                <h1 class="card-title">Thông tin tài khoản</h1>
+                                <h1 class="card-title">Đơn hàng của tôi: 3</h1>
                             </div>
                             <hr/>
-                            <div class="card-body">
-                                <table class="profile-infor-overview">
-                                    <tr>
-                                        <td>Họ và Tên <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="Oh!Fresh Store " disabled> </td>
-                                        <td>Gmail <br/> <input id="inputinforgmail" class="profile-infor-textbox" type="text" value="Oh!Fresh@gmail.com" disabled> </td>
-                                                            
-                                    </tr>
-                    
-                                    <tr>
-                                        <td>Username <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="ohfreshteam " disabled> </td>
-                                        <td>Số điện thoại <br/> <input id="inputinforphone" class="profile-infor-textbox" type="text" value="012345678" disabled> </td>
-                                    </tr>
-                            
-                                    <tr>
-                                        <td colspan="2">Địa chỉ <br/> <input id="inputinforaddress" class="profile-infor-textbox" type="text" value="1111 Quốc Lộ 1A, Thủ Đức, TPHCM" disabled> </td>                        
-                                    </tr>
-                                                                                                                
-                                    <tr>
-                                        <td colspan="2" class="profile-infor-textbox">
-                                            <button onclick="saveprofile()">Lưu</button>
-                                        </td>
-                                    </tr>
-                                
-                                </table>
+                            <div class="order">
+                                <a>
+                                    <div class="order-header">
+                                        <div class="order-content">
+                                            <p style="font-size: 20px;"><b>#123456</b></p>
+                                            <p>20.11.2021</p>
+                                        </div>
+                                        <div class="order-status">
+                                            <span class="order-status-content"><b>Đã xác nhận</b></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="order-body">
+                                    <a>
+                                        <div class="order-detail">
+                                            <div class="order-info" style="text-align: left;">
+                                                <div>
+                                                    <img src="/assets/img/Product/Apple.png" width="100%">
+                                                </div>
+                                                <div style="padding-left: 20px;">
+                                                    <p><b>Táo đỏ New Zealand</b></p>
+                                                    <p>0.5KG</p>
+                                                </div>
+                                                <div style="display: grid; grid-template-rows: 2fr 1fr; text-align: right;">
+                                                    <div>
+                                                        <p>49.000 VNĐ</p>
+                                                        <p>x1</p>
+                                                    </div>
+                                                    <div style="vertical-align: bottom;">
+                                                        <span class="rate">Đánh giá sản phẩm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="line"></div>
+                                    <a>
+                                        <div class="order-detail">
+                                            <div class="order-info" style="text-align: left;">
+                                                <div>
+                                                    <img src="/assets/img/Product/Carrot.png" width="100%">
+                                                </div>
+                                                <div style="padding-left: 20px;">
+                                                    <p><b>Cà rốt Đà Lạt</b></p>
+                                                    <p>0.5KG</p>
+                                                </div>
+                                                <div style="display: grid; grid-template-rows: 2fr 1fr; text-align: right;">
+                                                    <div>
+                                                        <p>19.000 VNĐ</p>
+                                                        <p>x2</p>
+                                                    </div>
+                                                    <div style="vertical-align: bottom;">
+                                                        <span class="rate">Đánh giá sản phẩm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="line"></div>
+                                    <a>
+                                        <div class="order-detail">
+                                            <div class="order-info" style="text-align: left;">
+                                                <div>
+                                                    <img src="/assets/img/Product/Blueberry.png" width="100%">
+                                                </div>
+                                                <div style="padding-left: 20px;">
+                                                    <p><b>Việt quất Úc</b></p>
+                                                    <p>1KG</p>
+                                                </div>
+                                                <div style="display: grid; grid-template-rows: 2fr 1fr; text-align: right;">
+                                                    <div>
+                                                        <p>99.000 VNĐ</p>
+                                                        <p>x1</p>
+                                                    </div>
+                                                    <div style="vertical-align: bottom;">
+                                                        <span class="rate">Đánh giá sản phẩm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-footer">
+                                    Tổng đơn hàng: <b>166.000 VNĐ</b>
+                                </div>
                             </div>
-                        </div>                    
-                    </div>
-
-                    <div class="card-password">
-                        <div class="card-body">
-                            <h1 class="card-title">Password</h1>
-                            <hr/>
-                            <div class="password-body" style="padding-top: 5px; margin-top: 10px;">
-                                <div class="form-group">
-                                    <div for="inputPasswordCurrent">Mật khẩu hiện tại</div>
-                                    <input type="password" class="form-control" id="inputPasswordCurrent">
-                                    <div  style="text-align: center; font-weight: normal;"><a href="#">Forgot your password?</a></div>
+                            <div class="order">
+                                <a>
+                                    <div class="order-header">
+                                        <div class="order-content">
+                                            <p style="font-size: 20px;"><b>#345678</b></p>
+                                            <p>20.12.2021</p>
+                                        </div>
+                                        <div class="order-status">
+                                            <span class="order-status-content"><b>Đang chờ</b></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="order-body">
+                                    <a>
+                                        <div class="order-detail">
+                                            <div class="order-info" style="text-align: left;">
+                                                <div>
+                                                    <img src="/assets/img/tet-promo/set-mut-1.png" width="100%" style="border-radius: 10px;">
+                                                </div>
+                                                <div style="padding-left: 20px;">
+                                                    <p><b>Set mứt Tết 01</b></p>
+                                                    <p>Phần</p>
+                                                </div>
+                                                <div style="display: grid; grid-template-rows: 2fr 1fr; text-align: right;">
+                                                    <div>
+                                                        <p>200.000 VNĐ</p>
+                                                        <p>x1</p>
+                                                    </div>
+                                                    <div style="vertical-align: bottom;">
+                                                        <span class="rate">Đánh giá sản phẩm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="form-group">
-                                    <div for="inputPasswordNew">Mật khẩu mới</div>
-                                    <input type="password" class="form-control" id="inputPasswordNew">
+                                <div class="order-footer">
+                                    Tổng đơn hàng: <b>210.000 VNĐ</b>
                                 </div>
-                                <div class="form-group">
-                                    <div for="inputPasswordNew2">Nhập lại mật khẩu</div>
-                                    <input type="password" class="form-control" id="inputPasswordNew2">
-                                    <br/><br/>
-                                    <button style="margin-top: 10px;">Đổi</button>
+                            </div>
+                            <div class="order">
+                                <a>
+                                    <div class="order-header">
+                                        <div class="order-content">
+                                            <p style="font-size: 20px;"><b>#246810</b></p>
+                                            <p>25.12.2021</p>
+                                        </div>
+                                        <div class="order-status">
+                                            <span class="order-status-content"><b>Đã hủy</b></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="order-body">
+                                    <a>
+                                        <div class="order-detail">
+                                            <div class="order-info" style="text-align: left;">
+                                                <div>
+                                                    <img src="/assets/img/tet-promo/ngu-qua.png" width="100%" style="border-radius: 10px;">
+                                                </div>
+                                                <div style="padding-left: 20px;">
+                                                    <p><b>Mâm ngũ quả phát tài</b></p>
+                                                    <p>Phần</p>
+                                                </div>
+                                                <div style="display: grid; grid-template-rows: 2fr 1fr; text-align: right;">
+                                                    <div>
+                                                        <p>200.000 VNĐ</p>
+                                                        <p>x1</p>
+                                                    </div>
+                                                    <div style="vertical-align: bottom;">
+                                                        <span class="rate">Đánh giá sản phẩm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>                        
+                                <div class="order-footer">
+                                    Tổng đơn hàng: <b>220.000 VNĐ</b>
+                                </div>
+                            </div>
                         </div>                    
                     </div>
                 </div>

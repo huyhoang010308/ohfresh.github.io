@@ -1,0 +1,79 @@
+.order { 
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 26px;
+    border: 0.5px #C8C8D5 solid;
+}
+
+hr {
+    border: 0;
+    border-top: 1.5px solid #686874;
+}
+
+.order-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #00B761;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.order-content {
+    margin: 15px 30px;
+    color: white;
+}
+
+.order-status {
+    text-align: right;
+    margin: 0 30px;
+}
+
+.order-status-content {
+    background-color: white;
+    color: #00B761;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.order-detail {
+    display: grid;
+    margin: 15px 30px;
+}
+
+.order-info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.order-info p {
+    padding: 3px;
+}
+
+.rate {
+    color: white;
+    background-color: #00B761;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.rate:hover {
+    cursor: pointer;
+    background-color:#C8C8D5;
+    color: black;
+}
+
+.line {
+    height: 5px;
+    background: url(/assets/img/bg_divider.png) repeat-x 10px;
+    margin: 3% 0;
+}
+
+.order-footer {
+    background-color: #C8C8D5;
+    padding: 15px 30px;
+    text-align: right;
+    border-radius: 0 0 25px 25px;
+}
