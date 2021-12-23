@@ -9,13 +9,13 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-.row {
+.row-blog {
     margin-left: -8px;
     margin-right: -8px;
     padding: 50px 130px;
 }
 
-.row::after {
+.row-blog::after {
     content: "";
     display: block;
     clear: both;
@@ -126,7 +126,7 @@ ul {
     margin: 10px;
 }
 
-.socials-list-icon {
+.socials-list-icon-blog {
     font-size: 20px;
     margin: 0px 2px;
     padding-bottom: 20px;
@@ -135,7 +135,7 @@ ul {
     color: #757575;
 }
 
-.socials-list-icon:hover {
+.socials-list-icon-blog:hover {
     color: #FF9330;
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
