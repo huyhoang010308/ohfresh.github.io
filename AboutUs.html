@@ -5,37 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index_style.css">
+    <link rel="stylesheet" href="assets/css/index_style.css">
+    <link rel="stylesheet" href="assets/css/aboutUs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/img/LOGO.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/font-awesome/css/all.css">
-    <title>Oh! Fresh - Rau củ tươi mát</title>
-
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function() {
-            document.getElementById('r' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000);
-    </script>
-    <!-- <style>
-        #images {
-            text-align: center;
-            margin: 50px auto;
-        }
-        
-        #images a {
-            margin: 10px 15px;
-            display: inline-block;
-            text-decoration: none;
-            color: black;
-        }
-    </style> -->
+    <title>Câu chuyện về Oh! Fresh</title>
 
 </head>
 
@@ -153,11 +130,66 @@
         <div id="content">
 
             <div id="slider">
-                <img src="/assets/img/tet-promo/banner-tet.png" alt="">
+                <!-- <img src="/assets/img/tet-promo/banner-tet.png" alt=""> -->
+                <div class="container-title">
+                    <p id="page-title">CÂU CHUYỆN VỀ OH! FRESH</p>
+                    <div class="btn">
+                        <a href="#">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section ">
+                <p class="section-title">Về Oh! Fresh</p>
+                <div class="container">
+                    <div class="content-text">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oh! Fresh là thương hiệu phân phối rau và thực phẩm hữu cơ, được thành lập tháng 01 năm 2021. với mục tiêu giúp người tiêu dùng Việt Nam có một cuộc sống khỏe mạnh hơn thông qua những loại thực
+                            phẩm hữu cơ có chứng nhận, thực phẩm tự nhiên và không có nguồn gốc biến đổi gene (GMO).</p>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cùng với sự phát triển không ngừng của nền kinh tế, nhu cầu về tính thuận tiện và linh động về mua sắm nói chung và các mặc hàng về thực phẩm nói riêng không ngừng tăng cao. Với minh chứng cụ
+                            thể trong bối cảnh đại dịch COVID-19, chợ truyền thống ngừng hoạt động, người mua hàng chỉ có thể liên hệ với người cung cấp thông qua tin nhắn, điện thoại, các ứng dụng trò chuyện, … dẫn đến chất lượng sản phẩm sẽ không được
+                            đảm bảo, trải nghiệm mua hàng không tốt khiến cho người tiêu dùng lo ngại về việc mua sắm thực phẩm sạch trực tuyến, nhất là các loại sản phẩm yêu cầu độ tươi ngon như rau, củ, quả.</p>
+                    </div>
+                    <div class="content-img">
+                        <img src="assets/img/Product/basket-full-vegetables.jpg.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section gray-bg">
+                <p class="section-title">chúng tôi cam kết</p>
+                <div id="standards">
+
+                </div>
             </div>
 
             <div class="section">
+                <!-- <p class="section-title">chúng tôi cam kết</p> -->
+                <div id="data-number">
+                    <div class="infoNumbers__container">
+                        <div class="infoNumbers__item">
+                            <span class="infoNumbers__number th" data-target="10">0</span>
+                            <div class="infoNumbers__info">
+                                <h3 class="infoNumbers__itemTitle">Top 10 Nhà phân phối rau củ sạch VGAP</h3>
+                            </div>
+                        </div>
 
+                        <div class="infoNumbers__item">
+                            <span class="infoNumbers__number" data-target="10000">0</span>
+                            <div class="infoNumbers__info">
+                                <h3 class="infoNumbers__itemTitle">Lượt truy cập website hàng tháng</h3>
+                            </div>
+                        </div>
+
+                        <div class="infoNumbers__item">
+                            <span class="infoNumbers__number" data-target="60000">0</span>
+                            <div class="infoNumbers__info">
+                                <h3 class="infoNumbers__itemTitle">Khách hàng</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -300,6 +332,8 @@
             </div>
         </div>
     </div>
+
+    <script src="assets/js/infoNumbers.js"></script>
 
 </body>
 
