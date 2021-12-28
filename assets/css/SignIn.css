@@ -230,3 +230,7 @@ div.Signin p {
 div.Signin a {
     color: #00B761;
 }
+
+.button {
+    cursor: pointer;
+}
