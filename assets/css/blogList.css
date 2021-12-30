@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
