@@ -65,7 +65,7 @@ hr {
     color: black;
 }
 
-.line {
+.line-divider {
     height: 5px;
     background: url(/assets/img/bg_divider.png) repeat-x 10px;
     margin: 3% 0;
