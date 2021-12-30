@@ -221,3 +221,7 @@ div.Signup p {
 div.Signup a {
     color: #00B761;
 }
+
+.button {
+    cursor: pointer;
+}

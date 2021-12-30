@@ -525,31 +525,13 @@ span.blog-date {
     margin-top: 5px;
 }
 
-div.pager-block {
-    background-color: #00B761;
-    height: 40px;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 50px;
+.num-page2:hover {
+    color: #00B761;
 }
 
-ul.pagation {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    color: white;
-}
-
-ul.pagation li {
-    text-decoration: none;
-    font-size: 14px;
-    padding: 11px;
+.num-page {
     text-align: center;
-}
-
-ul.pagation li:hover {
-    border: 1px solid white;
-    cursor: pointer;
+    margin-top: 50px;
 }
 
 
