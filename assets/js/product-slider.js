@@ -1,5 +1,5 @@
 var cardSpaces= 15;
-var middleDistance = 300;
+var middleDistance = 350;
 
 	var nxtVal = middleDistance ;
 	middleDistance -= cardSpaces;
