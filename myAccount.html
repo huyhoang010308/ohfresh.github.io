@@ -155,7 +155,7 @@
                             <img class="img-avatar" src="/assets/img/Client/avatar.jpg">
                         </td>
                         <td>
-                            <h2 class="user-name">Minh Kon Tum</h2>
+                            <h3 class="user-name">Minh Kon Tum</h3>
                         </td>
                     </tr>
                     <tr>
@@ -167,7 +167,7 @@
                     </tr>
                 </table>
                 <a href="/myAccount.html">
-                    <button class="tab">
+                    <button class="selected" >
                         Tài khoản
                     </button>
                 </a>
@@ -203,7 +203,7 @@
                 </a>
             </div>
             <div class="account-info">
-                <h1>Thông tin tài khoản</h1>
+                <h2>Thông tin tài khoản</h2>
                 <div class="info-body">
                     <div class="title">Họ tên</div>
                     <input type="text" id="name" value="Minh Kon Tum">
@@ -227,11 +227,40 @@
                             <option value="" disalbe="" selected="">Tân Phú</option>
                         </select>
                     </div>
-                </div>
-                <div>
-                    <a href="#" class="password-toggle">Thay đổi mật khẩu</a>
+                    <div class="title">Giới tính</div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td style="width: 150px;">
+                                    <label class="container">
+                                        <input type="radio" name="gender" checked>
+                                        <span class="checkmark"></span>
+                                        Nam
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="container">
+                                        <input type="radio" name="gender">
+                                        <span class="checkmark"></span>
+                                        Nữ
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <button id="update">Cập nhật tài khoản</button>
+                <div class="line"></div>
+                <h2>Đổi mật khẩu</h2>
+                <div class="info-body">
+                    <div class="title">Mật khẩu cũ</div>
+                    <input type="password" id="oldpw">
+                    <div class="title">Mật khẩu mới</div>
+                    <input type="password" id="name">
+                    <div class="title">Nhập lại mật khẩu</div>
+                    <input type="password" id="name">
+                </div>
+                <button id="update">Lưu mật khẩu</button>
             </div>
         </div>
 
