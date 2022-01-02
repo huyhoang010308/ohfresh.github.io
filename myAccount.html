@@ -146,155 +146,94 @@
                 </div>
             </div>
         </div>
-        
-        <div class="container">
-            
-            <div class="content">
-                <div class="left-row">
-                    <div class="col-md-5 col-xl-4">
-                        <div class="card">
-                            <table class="profile-infor">
-                                <tr>
-                                    <td rowspan="2"><img class="img-avatar" src="/assets/img/admin/ava_admin.jpg"/></td>
-                                    <td class="profile-name"><b>Oh! Fresh</b></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>
-                                        <span>
-                                            <img class="icon-edit-profile" src="/assets/img/admin/ava_admin.jpg" />
-                                            <a onclick="edit()" class="profile-edit" href="#">Chỉnh sửa</a>
-                                        </span>
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr class="line"/>
-        
-                            <div class="list-group list-group-flush" role="tablist">
-                                <div  class="list-group-item"  href="#account" role="tab">
-                                    <div class="notification">
-                                        <a href="#" style="color: #00B761;;">
-                                            <span class="icon"><i class="fas fa-user-circle"></i></i>
-                                            </span>
-                                            <span>Tài khoản</span>
-                                        </a>
-                                    </div>                                    
-                                </div>
-                    
-                                <hr class="line"/> 
-                                
-                                <div  class="list-group-item"  href="#account" role="tab">
-                                    <div class="notification">
-                                        <a href="#">
-                                            <span class="icon"><i class="fas fa-bell"></i></i>
-                                            </span>
-                                            <span>Thông báo</span>
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <hr class="line"/> 
-                                
-                                <div  class="list-group-item"  href="#account" role="tab">
-                                    <div class="notification">
-                                        <a href="/myOrder.html">
-                                            <span class="icon"><i class="fas fa-shopping-bag"></i></i>
-                                            </span>
-                                            <span>Đơn hàng</span>
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <hr class="line"/> 
-                                
-                                <div  class="list-group-item"  href="#account" role="tab">
-                                    <div class="notification">
-                                        <a href="#">
-                                            <span class="icon"><i class="fas fa-gift"></i></i>
-                                            </span>
-                                            <span>Voucher</span>
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <hr class="line"/> 
-                                
-                                <div  class="list-group-item"  href="#account" role="tab">
-                                    <div class="notification">
-                                        <a href="#">
-                                            <span class="icon"><i class="fas fa-gift"></i></i>
-                                            </span>
-                                            <span>Sản phẩm yêu thích</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="right-row">
-                    <div class="tab-content">
-                        <div class="card">
-                            <div class="card-header">
-                                <h1 class="card-title">Thông tin tài khoản</h1>
-                            </div>
-                            <hr class="line1"/>
-                            <div class="card-body">
-                                <table class="profile-infor-overview">
-                                    <tr>
-                                        <td>Họ và Tên <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="Oh!Fresh Store " disabled> </td>
-                                        <td>Gmail <br/> <input id="inputinforgmail" class="profile-infor-textbox" type="text" value="Oh!Fresh@gmail.com" disabled> </td>
-                                                            
-                                    </tr>
-                    
-                                    <tr>
-                                        <td>Username <br/> <input id="inputinfor" class="profile-infor-textbox" type="text" value="ohfreshteam " disabled> </td>
-                                        <td>Số điện thoại <br/> <input id="inputinforphone" class="profile-infor-textbox" type="text" value="012345678" disabled> </td>
-                                    </tr>
-                            
-                                    <tr>
-                                        <td colspan="2">Địa chỉ <br/> <input id="inputinforaddress" class="profile-infor-textbox" type="text" value="1111 Quốc Lộ 1A, Thủ Đức, TPHCM" disabled> </td>                        
-                                    </tr>
-                                                                                                                
-                                    <tr>
-                                        <td colspan="2" class="profile-infor-textbox">
-                                            <button onclick="saveprofile()">Lưu</button>
-                                        </td>
-                                    </tr>
-                                
-                                </table>
-                            </div>
-                        </div>                    
-                    </div>
 
-                    <div class="card-password">
-                        <div class="card-body">
-                            <h1 class="card-title">Password</h1>
-                            <hr class="line1"/>
-                            <div class="password-body" style="padding-top: 5px; margin-top: 10px;">
-                                <div class="form-group">
-                                    <div for="inputPasswordCurrent">Mật khẩu hiện tại</div>
-                                    <input type="password" class="form-control" id="inputPasswordCurrent">
-                                    <div class="txtforgotpass"><a href="#">Forgot your password?</a></div>
-                                </div>
-                                <div class="form-group">
-                                    <div for="inputPasswordNew">Mật khẩu mới</div>
-                                    <input type="password" class="form-control" id="inputPasswordNew">
-                                </div>
-                                <div class="form-group">
-                                    <div for="inputPasswordNew2">Nhập lại mật khẩu</div>
-                                    <input type="password" class="form-control" id="inputPasswordNew2">
-                                    <br/><br/>
-                                    <button style="margin-top: 10px;">Đổi</button>
-                                </div>
-                            </div>                        
-                        </div>                    
+        <div id="account-container">
+            <div class="account-menu">
+                <table style="margin-bottom: 10px;">
+                    <tr>
+                        <td rowspan="2">
+                            <img class="img-avatar" src="/assets/img/Client/avatar.jpg">
+                        </td>
+                        <td>
+                            <h2 class="user-name">Minh Kon Tum</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="edit-profile">
+                                <img class="img-setting" src="/assets/img/icon/setting.png">Chỉnh sửa
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <a href="/myAccount.html">
+                    <button class="tab">
+                        Tài khoản
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="tab">
+                        Thông báo
+                    </button>
+                </a>
+                <a href="/myOrder.html">
+                    <button class="tab">
+                        Đơn hàng
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="tab">
+                        Voucher
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="tab">
+                        Sản phẩm yêu thích
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="tab">
+                        Đánh giá
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="tab">
+                        Thoát
+                    </button>
+                </a>
+            </div>
+            <div class="account-info">
+                <h1>Thông tin tài khoản</h1>
+                <div class="info-body">
+                    <div class="title">Họ tên</div>
+                    <input type="text" id="name" value="Minh Kon Tum">
+                    <div class="title">Tên đăng nhập</div>
+                    <input type="text" id="name" value="minhkontum" readonly>
+                    <div class="title">Email</div>
+                    <input type="email" id="name" value="minhkontum@smtown.com" readonly>
+                    <div class="title">Số điện thoại</div>
+                    <input type="text" id="name" value="0987654321">
+                    <div class="title">Địa chỉ</div>
+                    <input type="text" id="name" value="101 Tôn Dật Tiên">
+                    <div class="title">Tỉnh/thành</div>
+                    <div class="location">
+                        <select name="city" class="information-form">
+                            <option value="" disalbe="" selected="">Hồ Chí Minh</option>
+                        </select>
+                        <select name="district" class="information-form">
+                            <option value="" disalbe="" selected="">Quận 7</option>
+                        </select>
+                        <select name="ward" class="information-form">
+                            <option value="" disalbe="" selected="">Tân Phú</option>
+                        </select>
                     </div>
                 </div>
+                <div>
+                    <a href="#" class="password-toggle">Thay đổi mật khẩu</a>
+                </div>
+                <button id="update">Cập nhật tài khoản</button>
             </div>
         </div>
-        
 
         <div id="footer">
             <div class="row footer-body">
