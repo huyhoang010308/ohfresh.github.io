@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index_style.css">
     <link rel="stylesheet" href="./assets/css/account_style.css">
+    <link rel="stylesheet" href="./assets/css/review_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/img/LOGO.svg" type="img/x-icon" />
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
-    <title>Tài Khoản</title>
+    <title>Đánh giá</title>
 
     <script>
         function edit(){
@@ -146,7 +147,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div id="container">
             <div class="account-menu">
                 <table style="margin-bottom: 10px;">
@@ -167,7 +168,7 @@
                     </tr>
                 </table>
                 <a href="/myAccount.html">
-                    <button class="selected" >
+                    <button class="tab" >
                         Tài khoản
                     </button>
                 </a>
@@ -192,7 +193,7 @@
                     </button>
                 </a>
                 <a href="myReview.html">
-                    <button class="tab">
+                    <button class="selected">
                         Đánh giá
                     </button>
                 </a>
@@ -202,69 +203,65 @@
                     </button>
                 </a>
             </div>
-            <div class="account-info">
-                <h2>Thông tin tài khoản</h2>
-                <div class="info-body">
-                    <div class="title">Họ tên</div>
-                    <input type="text" id="name" value="Minh Kon Tum">
-                    <div class="title">Tên đăng nhập</div>
-                    <input type="text" id="name" value="minhkontum" readonly>
-                    <div class="title">Email</div>
-                    <input type="email" id="name" value="minhkontum@smtown.com" readonly>
-                    <div class="title">Số điện thoại</div>
-                    <input type="text" id="name" value="0987654321">
-                    <div class="title">Địa chỉ</div>
-                    <input type="text" id="name" value="101 Tôn Dật Tiên">
-                    <div class="title">Tỉnh/thành</div>
-                    <div class="location">
-                        <select name="city" class="information-form">
-                            <option value="" disalbe="" selected="">Hồ Chí Minh</option>
-                        </select>
-                        <select name="district" class="information-form">
-                            <option value="" disalbe="" selected="">Quận 7</option>
-                        </select>
-                        <select name="ward" class="information-form">
-                            <option value="" disalbe="" selected="">Tân Phú</option>
-                        </select>
+            <div class="review-list">
+                <h2>Đánh giá của bạn: 2 đánh giá</h2>
+                <div class="review-info">
+                    <div class="review-header">
+                        <div>Tên sản phẩm</div>
+                        <div>Bình luận</div>
+                        <div>Điểm</div>
+                        <div>Trạng thái</div>
+                        <div></div>
                     </div>
-                    <div class="title">Giới tính</div>
-                    <div>
-                        <table>
-                            <tr>
-                                <td style="width: 150px;">
-                                    <label class="container">
-                                        <input type="radio" name="gender" checked>
-                                        <span class="checkmark"></span>
-                                        Nam
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="container">
-                                        <input type="radio" name="gender">
-                                        <span class="checkmark"></span>
-                                        Nữ
-                                    </label>
-                                </td>
-                            </tr>
-                        </table>
+                    <div class="review-body">
+                        <div class="review-body-detail">
+                            <div style="text-align: left;">
+                                Táo đỏ New Zealand
+                            </div>
+                            <div style="text-align: justify;">
+                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
+                            </div>
+                            <div>
+                                <span class="product-rating">
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                </span>
+                            </div>
+                            <div>Đã duyệt</div>
+                            <div>
+                                <a href="#" class="action">Sửa</a>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="review-body-detail">
+                            <div style="text-align: left;">
+                                Việt quất Úc
+                            </div>
+                            <div style="text-align: justify;">
+                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
+                            </div>
+                            <div>
+                                <span class="product-rating">
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                            <div>Đang chờ</div>
+                            <div>
+                                <a href="#" class="action">Sửa</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button id="update">Cập nhật tài khoản</button>
-                <div class="line"></div>
-                <h2>Đổi mật khẩu</h2>
-                <div class="info-body">
-                    <div class="title">Mật khẩu cũ</div>
-                    <input type="password" id="oldpw">
-                    <br>
-                    <a href="#" class="forget">Quên mật khẩu?</a>
-                    <div class="title">Mật khẩu mới</div>
-                    <input type="password" id="name">
-                    <div class="title">Nhập lại mật khẩu</div>
-                    <input type="password" id="name">
-                </div>
-                <button id="update">Lưu mật khẩu</button>
             </div>
         </div>
+        
 
         <div id="footer">
             <div class="row footer-body">

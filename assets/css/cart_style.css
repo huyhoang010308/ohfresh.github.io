@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+* {
+    font-family: 'Montserrat', serif;
+}
+
+:root {
+    --primary_green: #00B761;
+    --primary_orange: #FF9330;
+    --primary_gray: #686874;
+    --light-gray: #C8C8D5;
+}
+
 #cart-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -7,7 +19,7 @@
 
 .cart-title,
 .order-info-title {
-    color: #00B761;
+    color: var(--primary_green);
     font-size: 22px;
 }
 
@@ -20,7 +32,7 @@
 .cart {
     display: grid;
     grid-template-columns: 4fr 1.75fr 1.5fr 1.75fr 0.8fr;
-    background-color: #00B761;
+    background-color: var(--primary_green);
     margin: 2% 0;
     padding: 2%;
     text-align: center;
@@ -95,12 +107,12 @@
 
 .remove-all,
 .back {
-    background-color: #00B761;
+    background-color: var(--primary_green);
     font-weight: bolder;
     color: white;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     vertical-align: middle;
     height: 45px;
@@ -122,7 +134,7 @@
 
 .divider {
     border: 0;
-    border-top: 2px solid #686874;
+    border-top: 2px solid var(--primary_gray);
     margin: 3% 0 5% 0;
 }
 
@@ -142,8 +154,8 @@
 }
 
 .input-voucher {
-    border-radius: 10px 0 0 10px;
-    border: 2px solid #00B761;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid var(--primary_green);
     background-color: white;
     color: black;
     font-style: bold;
@@ -159,12 +171,12 @@
 }
 
 .apply {
-    background-color: #00B761;
+    background-color: var(--primary_green);
     font-weight: bolder;
     color: white;
     border: none;
     outline: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     text-align: center;
     vertical-align: middle;
     height: 45px;
@@ -188,12 +200,12 @@
 }
 
 .process {
-    background-color: #00B761;
+    background-color: var(--primary_green);
     font-weight: bolder;
     color: white;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     vertical-align: middle;
     height: 45px;
