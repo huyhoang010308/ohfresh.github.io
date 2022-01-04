@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index_style.css">
     <link rel="stylesheet" href="./assets/css/blogDetail.css">
+    <link rel="stylesheet" href="./assets/css/index_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,51 +20,49 @@
         <div id="header">
             <div id="container1">
                 <div id="logo">
-                    <a href="/index.html"><img src="./assets/img/LOGO.png" alt="Oh! Fresh" title="Oh! Fresh" id="logo"></a>
-                </div>
-
-                <div class="spacer"></div>
-                <div id="location">
-                    <div class="delivery-title">
-                        <span>Giao hàng tới</span>
-                        <i class="fas fa-map-marker-alt" style="margin-left: 3px;"></i>
-                    </div>
-
-                    <div class="delivery-site">
-                        <a href="#" class="js-select-location">
-                            <span id="select-site">Chọn khu vực</span>
-                            <i class="fas fa-chevron-down" style="margin-left: 1px;"></i>
-                        </a>
-                    </div>
-                    <!-- <div class="dropdown">
-    
-    
-                    </div> -->
+                    <a href="#"><img src="./assets/img/LOGO.png" alt="Oh! Fresh" title="Oh! Fresh" id="logo"></a>
                 </div>
 
                 <!-- <div class="spacer"></div> -->
+                <div id="location-search">
+                    <div id="location">
+                        <div class="delivery-title">
+                            <span>Giao hàng tới</span>
+                            <i class="fas fa-map-marker-alt" style="margin-left: 3px;"></i>
+                        </div>
 
-                <div class="search-wrapper">
-                    <div class="search-input">
-                        <input type="text" name="" placeholder="Hôm nay ăn gì?..." id="">
-                        <div class="search-icon"><i class="fas fa-search"></i></div>
-                        <span class="bottom"></span>
-                        <span class="right"></span>
-                        <span class="top"></span>
-                        <span class="left"></span>
-                        <!-- <div class="autocom-box">
-                            <ul>
-                                <li>Cà rốt</li>
-                                <li>Dâu tây Dalas</li>
-                                <li>Chanh không hạt</li>
-                                <li>Thanh long ruột đỏ</li>
-                                <li>Măng tây xanh hữu cơ</li>
-                            </ul>
-                        </div> -->
+                        <div class="delivery-site">
+                            <a href="#" class="js-select-location">
+                                <span id="select-site">Chọn khu vực</span>
+                                <i class="fas fa-chevron-down" style="margin-left: 1px;"></i>
+                            </a>
+                        </div>
                     </div>
+
+                    <!-- Search bar start -->
+                    <div class="search-wrapper">
+                        <div class="search-input">
+                            <input type="text" name="" placeholder="Hôm nay ăn gì?..." id="">
+                            <div class="search-icon"><i class="fas fa-search"></i></div>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <!-- <div class="autocom-box">
+                                <ul>
+                                    <li>Cà rốt</li>
+                                    <li>Dâu tây Dalas</li>
+                                    <li>Chanh không hạt</li>
+                                    <li>Thanh long ruột đỏ</li>
+                                    <li>Măng tây xanh hữu cơ</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Search bar end-->
                 </div>
 
-                <div class="spacer"></div>
+                <!-- <div class="spacer"></div> -->
 
                 <div class="link">
                     <div class="notification">
@@ -98,22 +97,28 @@
                         <span id="select">Danh mục sản phẩm</span>
                         <i class="fas fa-chevron-down" style="margin-left: 2%;"></i>
                     </a>
+
+                    <ul class="subnav">
+                        <li><a href="">Rau, củ, quả</a></li>
+                        <li><a href="">Trái cây tươi</a></li>
+                        <li><a href="">Ngũ cốc, hạt</a></li>
+                        <li><a href="">Nấm</a></li>
+                        <li class="last-item"><a href="">Gia vị</a></li>
+                    </ul>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div id="navigation">
                     <ul id="nav">
-                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="index.html" class="now">Trang chủ</a></li>
                         <li><a href="promotion.html">Khuyến mãi</a></li>
                         <li><a href="blogList.html">Blog</a></li>
-                        <li><a href="AboutUs.html">Về chúng tôi</a></li>
+                        <li><a href="/AboutUs.html">Về chúng tôi</a></li>
                         <li><a href="Contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
-
                 <div class="spacer"></div>
-
                 <div class="hotline">
                     <img src="./assets/img/icon/ic_hotline.svg" alt="Hotline" class="hotline-icon">
                     <a href="tel:19004455" title="Hotline">19004455</a>
@@ -126,7 +131,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="container">
             <div class="row-blog">
                 <div class="col col-7">
@@ -144,7 +149,7 @@
                                     <i class="fas fa-user"></i> Bao Tran Trinh Ngoc
                                 </a>
                                 <a href="#" class="link">
-                                    <i class="fas fa-clock"></i>  Wed 12, 2021
+                                    <i class="fas fa-clock"></i> Wed 12, 2021
                                 </a>
                                 <a href="#" class="link">
                                     <i class="fas fa-comment-dots"></i> 84
@@ -159,25 +164,19 @@
                         <!-- content -->
                         <div class="content">
                             <p>
-                                &nbsp;&nbsp;&nbsp;&nbsp; Thông thường, mọi người tìm tới phương pháp này như 1 giải pháp cho chế độ ăn kiêng giảm cân, giảm béo 
-                                hơn là tăng cân vì nó mang lại sự tối đa về dinh dưỡng nhưng giảm rất nhiều về tạp chất có hại. Hiểu theo
-                                 cách đơn giản nhất Eat Clean là tránh các nhóm thực phẩm đóng gói hay chế biến sẵn. Thay vào đó, sẽ ăn 
-                                 các loại thức ăn ở dạng nguyên thủy tự nhiên nhất có thể. Điều này không có nghĩa là tất cả mọi loại thức 
-                                 ăn phải ăn sống đâu nhé!
+                                &nbsp;&nbsp;&nbsp;&nbsp; Thông thường, mọi người tìm tới phương pháp này như 1 giải pháp cho chế độ ăn kiêng giảm cân, giảm béo hơn là tăng cân vì nó mang lại sự tối đa về dinh dưỡng nhưng giảm rất nhiều về tạp chất có hại. Hiểu theo cách đơn giản nhất
+                                Eat Clean là tránh các nhóm thực phẩm đóng gói hay chế biến sẵn. Thay vào đó, sẽ ăn các loại thức ăn ở dạng nguyên thủy tự nhiên nhất có thể. Điều này không có nghĩa là tất cả mọi loại thức ăn phải ăn sống đâu nhé!
                             </p>
                             <h2 class="subtitle">Những cách Eatclean hiệu quả</h2>
                             <ul>
                                 <li>Luôn ăn đủ 6 bữa/ngày, mỗi bữa đều có đầy đủ các dưỡng chất thiết yếu, quan trọng nhất là protein.</li>
-                                <li>Nạp vào cơ thể đủ các dưỡng chất: Protein (thịt, cá, trứng, sữa...), tinh bột, chất béo (dầu thực vật), 
-                                    vitamin và khoáng chất. Về tinh bột, chúng ta không nên cắt giảm hoàn toàn vì mục tiêu của chúng ta vẫn 
-                                    là ăn đủ dưỡng chất để khỏe đẹp. Bỏ tinh bột, bạn sẽ không còn sức để tập luyện và dễ bị mất cơ. Bạn nên
-                                     chọn các loại thực phẩm chứa tinh bột tiêu hóa chậm để giảm đói.</li>
+                                <li>Nạp vào cơ thể đủ các dưỡng chất: Protein (thịt, cá, trứng, sữa...), tinh bột, chất béo (dầu thực vật), vitamin và khoáng chất. Về tinh bột, chúng ta không nên cắt giảm hoàn toàn vì mục tiêu của chúng ta vẫn là ăn đủ dưỡng
+                                    chất để khỏe đẹp. Bỏ tinh bột, bạn sẽ không còn sức để tập luyện và dễ bị mất cơ. Bạn nên chọn các loại thực phẩm chứa tinh bột tiêu hóa chậm để giảm đói.</li>
                                 <li>Hạn chế hết mức các loại thức ăn nhanh, các món bánh snack, nước uống có ga, đồ ăn đóng hộp, chế biến sẵn...</li>
                                 <li>Uống nhiều nước mỗi ngày.</li>
                                 <li>Hãy tự nấu ăn.</li>
                                 <li>Không được bỏ bữa, đặc biệt là bữa sáng.</li>
-                                <li>Khi áp dụng phương pháp này, bạn cần phải tính tổng lượng calo mình tiêu hao mỗi ngày bằng công cụ tính TDEE online. 
-                                    Sau đó, nếu muốn giảm cân thì ăn ít hơn lượng calo TDEE và ngược lại.</li>
+                                <li>Khi áp dụng phương pháp này, bạn cần phải tính tổng lượng calo mình tiêu hao mỗi ngày bằng công cụ tính TDEE online. Sau đó, nếu muốn giảm cân thì ăn ít hơn lượng calo TDEE và ngược lại.</li>
                                 <li>Hạn chế ăn bánh kẹo, đồ ăn sẵn vì lượng đường này không tốt sẽ chuyển hóa thành mỡ thừa.</li>
                                 <li>Nên ăn thật nhiều rau củ quả mỗi ngày.</li>
                             </ul>
@@ -195,8 +194,7 @@
                                 <h3 class="author-name">Bao Tran Trinh Ngoc</h3>
 
                                 <p class="text-secondary">
-                                    Hi vọng với những chia sẽ này, các bạn sẽ tìm được phương pháp eatclean hiệu quả nhất cho bản thân. <br>
-                                    Các bạn có thể liên hệ tự vấn qua các trang social được đính kèm bên dưới.
+                                    Hi vọng với những chia sẽ này, các bạn sẽ tìm được phương pháp eatclean hiệu quả nhất cho bản thân. <br> Các bạn có thể liên hệ tự vấn qua các trang social được đính kèm bên dưới.
                                 </p>
 
                                 <div class="post-tags">
@@ -222,13 +220,12 @@
                                         <td class="comment-content">
                                             <h5 class="customer-name">Nguyễn Thị Linh</h5>
                                             <p>
-                                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, 
-                                                nhà sản xuất, cảm ơn người bán hàng.
+                                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
                                             </p>
                                         </td>
                                     </tr>
-                                </table> 
-                                
+                                </table>
+
                                 <table class="comment-item">
                                     <tr class="">
                                         <td>
@@ -239,37 +236,35 @@
                                         <td class="comment-content">
                                             <h5 class="customer-name">Bùi Thị Thu Trang</h5>
                                             <p>
-                                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, 
-                                                nhà sản xuất, cảm ơn người bán hàng.
+                                                Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
                                             </p>
                                         </td>
                                     </tr>
-                                </table> 
-                            
-                            <!-- comment form -->
-                            <div class="comment-form">
-                                <input class="input-text" placeholder="Nhập bình luận">
-                                <button class="button-send">Submit</button>
+                                </table>
+
+                                <!-- comment form -->
+                                <div class="comment-form">
+                                    <input class="input-text" placeholder="Nhập bình luận">
+                                    <button class="button-send">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                <div class="col col-3">
+                <div class="col col-3 left-side">
                     <div class="related-post-list">
                         <h2 class="related-title">Bài viết liên quan</h2>
                         <div class="related-post">
-                        <img src="/assets/img/Blog/Blog.jpg" alt="" class="related-post-img" width="100%">
-                        <div class="related-post-body">
-                            <p class="related-post-time">Mon 13 Dec 2021</p>
-                            <h3 class="related-post-heading">HỌC CÁCH XÂY DỰNG MỘT LỐI SỐNG XANH</h3>
-                            <p class="related-post-desc">
-                                Lối sống xanh là trào lưu đang được hưởng ứng toàn cầu nhằm bảo vệ môi 
-                                trường và ứng phó với biến đổi khí hậu.
-                            </p>
-                            <a href="blogDetail.html" class="view-more"><b>Xem thêm</b> <i class="fas fa-arrow-right"></i></a>
+                            <img src="/assets/img/Blog/Blog.jpg" alt="" class="related-post-img" width="100%">
+                            <div class="related-post-body">
+                                <p class="related-post-time">Mon 13 Dec 2021</p>
+                                <h3 class="related-post-heading">HỌC CÁCH XÂY DỰNG MỘT LỐI SỐNG XANH</h3>
+                                <p class="related-post-desc">
+                                    Lối sống xanh là trào lưu đang được hưởng ứng toàn cầu nhằm bảo vệ môi trường và ứng phó với biến đổi khí hậu.
+                                </p>
+                                <a href="blogDetail.html" class="view-more"><b>Xem thêm</b> <i class="fas fa-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                 </div>
@@ -282,28 +277,28 @@
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">VỀ OH! FRESH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Câu chuyện thương hiệu</a> <br>
                             <a class="footer-infor" href="">Về chúng tôi</a> <br>
                             <a class="footer-infor" href="">Liên hệ</a>
                         </div>
                     </div>
-        
+
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">MY OH! FRESH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Quyền lợi thành viên</a> <br>
                             <a class="footer-infor" href="">Thông tin thành viên</a> <br>
                             <a class="footer-infor" href="">Theo dõi đơn hàng</a> <br>
                             <a class="footer-infor" href="">Hướng dẫn đặt hàng</a>
                         </div>
                     </div>
-    
+
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">CHÍNH SÁCH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Chính sách và qui định chung</a> <br>
                             <a class="footer-infor" href="">Chính sách và giao nhận thanh toán</a> <br>
                             <a class="footer-infor" href="">Chính sách đổi trả sản phẩm</a> <br>
@@ -311,7 +306,7 @@
                             <a class="footer-infor" href="">Điều khoản sử dụng</a>
                         </div>
                     </div>
-    
+
                     <div class="col col-four footer-section" style="text-align: center; padding-top: 30px;">
                         <img src="/assets/img/BCT.png" alt="Bộ công thương" width="70%">
                         <img src="/assets/img/duns.png" alt="Bộ công thương" width="30%">
@@ -323,21 +318,21 @@
                         <h3 class="footer-title">ĐỊA CHỈ LIÊN HỆ</h3>
                         <hr class="footer-hr">
                         <div class="footer-content">
-                            <i class="fas fa-map-marker-alt"></i>  &nbsp; 
+                            <i class="fas fa-map-marker-alt"></i> &nbsp;
                             <a class="footer-infor" href="">365 Lê Văn Sỹ, Phường 12, Quận 3. <br>
                                 100 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.
                             </a>
                             <br><br>
-        
-                            <i class="fas fa-phone"></i> &nbsp; 
+
+                            <i class="fas fa-phone"></i> &nbsp;
                             <a class="footer-infor" href="">0123.456.789</a>
                             <br><br>
-        
-                            <i class="fas fa-envelope"></i> &nbsp; 
+
+                            <i class="fas fa-envelope"></i> &nbsp;
                             <a class="footer-infor" href="">ohfreshgrocery@gmail.com</a>
                         </div>
                     </div>
-        
+
                     <div class="col col-third footer-section">
                         <h3 class="footer-title">KẾT NỐI</h3>
                         <hr class="footer-hr">
@@ -348,19 +343,19 @@
                                 <a href=""><i class="fab fa-twitter socials-list-icon"></i></a>
                             </div>
                         </div>
-        
+
                         <h3 class="footer-title">PHƯƠNG THỨC THANH TOÁN</h3>
                         <hr class="footer-hr">
                         <div class="footer-content">
                             <div class="payment-list">
-                                    <img src="/assets/img/payment/dollars.png">
-                                    <img src="/assets/img/payment/ic_momo.png">
-                                    <img src="/assets/img/payment/ic_VNPay.png">
-                                    <img src="/assets/img/payment/ic_zalopay.png">
+                                <img src="/assets/img/payment/dollars.png">
+                                <img src="/assets/img/payment/ic_momo.png">
+                                <img src="/assets/img/payment/ic_VNPay.png">
+                                <img src="/assets/img/payment/ic_zalopay.png">
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col col-third footer-section">
                         <h3 class="footer-title">THÔNG TIN KHUYẾN MÃI</h3>
                         <hr class="footer-hr">
@@ -370,7 +365,7 @@
                             </div>
                             <div>
                                 <input type="text" name="" placeholder="Thắc mắc hoặc đóng góp ý kiến (nếu có)" id="" class="form-control form-control-fb">
-                            </div>    
+                            </div>
                             <input class="form-send" type="submit" value="Gửi">
                         </div>
                     </div>

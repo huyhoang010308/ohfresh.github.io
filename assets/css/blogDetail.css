@@ -13,6 +13,7 @@ html {
     margin-left: -8px;
     margin-right: -8px;
     padding: 50px 130px;
+    position: relative;
 }
 
 .row-blog::after {
@@ -33,6 +34,14 @@ html {
     width: 30%;
     padding-left: 80px;
     position: relative;
+}
+
+.left-side {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 .container {
@@ -84,7 +93,7 @@ a {
 
 .thumbnail {
     width: 100%;
-    padding-top: 50%; 
+    padding-top: 50%;
     background: url('/assets/img/Blog/Eatclean.jpg') top center / cover no-repeat;
 }
 
@@ -179,7 +188,6 @@ ul {
 .customer-img {
     width: 60%;
     border-radius: 50%;
-    
 }
 
 .comment-content {
@@ -202,7 +210,7 @@ ul {
 }
 
 button {
-    z-index: 1;
+    z-index: 0;
     position: relative;
     font-size: inherit;
     font-family: inherit;
@@ -223,7 +231,9 @@ button:hover {
     transition: 0.2s ease-in-out;
 }
 
+
 /* COL 3 */
+
 .related-post-list {
     position: sticky;
     position: -webkit-sticky;
