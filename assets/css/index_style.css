@@ -689,7 +689,7 @@ input:focus~.left {
     text-align: center;
     letter-spacing: 4px;
     color: black;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 #product-box {
@@ -770,8 +770,8 @@ input:focus~.left {
     height: 310px;
     background: transparent;
     overflow: hidden;
-    margin-top: 75px;
-    margin-bottom: -25px;
+    margin-top: 60px;
+    margin-bottom: -60px;
 }
 
 .item {
@@ -1256,7 +1256,7 @@ input:focus~.left {
 }
 
 .best-selling-list {
-    margin-top: 32px;
+    margin-top: 30px;
     padding: 0 100px;
     margin-bottom: 100px;
 }
@@ -1415,13 +1415,13 @@ input:focus~.left {
 /* NEW PRODUCT */
 
 .new-product-list {
-    padding: 50px 100px;
+    padding: 20px 100px;
     text-align: center;
 }
 
 .new-product-border {
     border-radius: 55px;
-    margin-top: 25px;
+    margin-top: px;
     text-align: center;
     background-color: #f7f7f9;
 }
@@ -1498,6 +1498,10 @@ input:focus~.left {
     padding: 0 20px;
 }
 
+#wrapper-product {
+    margin-top: 60px;
+}
+
 #blogthumb {
     padding: 0 !important;
 }
@@ -1509,7 +1513,7 @@ input:focus~.left {
 .lastest-post-list {
     background-color: #00B761;
     border-radius: 70px;
-    padding: 0px 100px 50px;
+    padding: 0px 100px 30px;
     text-align: center;
 }
 
@@ -1518,7 +1522,7 @@ input:focus~.left {
     background-size: cover;
     border: none;
     border-radius: 55px;
-    margin-top: 30px;
+    margin-top: 60px;
     border: none;
     /* opacity: 1;
     transition: 0.2s ease-in-out; */
@@ -1601,7 +1605,7 @@ input:focus~.left {
 /* CLIENT SAY */
 
 .client-list {
-    margin-top: 32px;
+    margin-top: 0px;
     padding: 0 150px;
 }
 
@@ -1611,7 +1615,8 @@ input:focus~.left {
     border: 2px solid #c8c8d5;
     padding: 20px;
     text-align: center;
-    margin: 30px 0px;
+    margin: 60px 0px 30px;
+    height: 450px;
 }
 
 .client-say-border img {
@@ -1633,7 +1638,7 @@ input:focus~.left {
 }
 
 .client-say-content {
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
     margin-top: 10px;
     line-height: 1.6;
