@@ -84,10 +84,12 @@
 
 .account-info {
     padding-left: 30px;
+    text-align: center;
 }
 
 .account-info h2 {
     font-weight: bolder;
+    text-align: left;
 }
 
 .info-body {
@@ -99,6 +101,7 @@
 .info-body * {
     margin: 7.5px 0;
     vertical-align: middle;
+    text-align: left;
 }
 
 .title {
@@ -232,5 +235,6 @@
 .forget {
     text-decoration: underline;
     color: var(--primary_green);
+    text-align: right;
 }
 
