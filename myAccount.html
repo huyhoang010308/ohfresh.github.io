@@ -15,14 +15,14 @@
     <title>Tài Khoản</title>
 
     <script>
-        function edit(){
+        function edit() {
             document.getElementById("inputinfor").disabled = false;
             document.getElementById("inputinforgmail").disabled = false;
             document.getElementById("inputinforphone").disabled = false;
             document.getElementById("inputinforaddress").disabled = false;
         }
 
-        function saveprofile(){
+        function saveprofile() {
             document.getElementById("inputinfor").disabled = true;
             document.getElementById("inputinforgmail").disabled = true;
             document.getElementById("inputinforphone").disabled = true;
@@ -167,7 +167,7 @@
                     </tr>
                 </table>
                 <a href="/myAccount.html">
-                    <button class="selected" >
+                    <button class="selected">
                         Tài khoản
                     </button>
                 </a>
@@ -256,7 +256,7 @@
                     <div class="title">Mật khẩu cũ</div>
                     <input type="password" id="oldpw">
                     <br>
-                    <a href="#" class="forget">Quên mật khẩu?</a>
+                    <a href="#" class="forget js-forget" title="Lấy lại mật khẩu">Quên mật khẩu?</a>
                     <div class="title">Mật khẩu mới</div>
                     <input type="password" id="name">
                     <div class="title">Nhập lại mật khẩu</div>
@@ -272,28 +272,28 @@
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">VỀ OH! FRESH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Câu chuyện thương hiệu</a> <br>
                             <a class="footer-infor" href="">Về chúng tôi</a> <br>
                             <a class="footer-infor" href="">Liên hệ</a>
                         </div>
                     </div>
-        
+
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">MY OH! FRESH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Quyền lợi thành viên</a> <br>
                             <a class="footer-infor" href="">Thông tin thành viên</a> <br>
                             <a class="footer-infor" href="">Theo dõi đơn hàng</a> <br>
                             <a class="footer-infor" href="">Hướng dẫn đặt hàng</a>
                         </div>
                     </div>
-    
+
                     <div class="col col-four footer-section">
                         <h3 class="footer-title">CHÍNH SÁCH</h3>
                         <hr class="footer-hr">
-                        <div class="footer-content"> 
+                        <div class="footer-content">
                             <a class="footer-infor" href="">Chính sách và qui định chung</a> <br>
                             <a class="footer-infor" href="">Chính sách và giao nhận thanh toán</a> <br>
                             <a class="footer-infor" href="">Chính sách đổi trả sản phẩm</a> <br>
@@ -301,7 +301,7 @@
                             <a class="footer-infor" href="">Điều khoản sử dụng</a>
                         </div>
                     </div>
-    
+
                     <div class="col col-four footer-section" style="text-align: center; padding-top: 30px;">
                         <img src="/assets/img/BCT.png" alt="Bộ công thương" width="70%">
                         <img src="/assets/img/duns.png" alt="Bộ công thương" width="30%">
@@ -313,21 +313,21 @@
                         <h3 class="footer-title">ĐỊA CHỈ LIÊN HỆ</h3>
                         <hr class="footer-hr">
                         <div class="footer-content">
-                            <i class="fas fa-map-marker-alt"></i>  &nbsp; 
+                            <i class="fas fa-map-marker-alt"></i> &nbsp;
                             <a class="footer-infor" href="">365 Lê Văn Sỹ, Phường 12, Quận 3. <br>
                                 100 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.
                             </a>
                             <br><br>
-        
-                            <i class="fas fa-phone"></i> &nbsp; 
+
+                            <i class="fas fa-phone"></i> &nbsp;
                             <a class="footer-infor" href="">0123.456.789</a>
                             <br><br>
-        
-                            <i class="fas fa-envelope"></i> &nbsp; 
+
+                            <i class="fas fa-envelope"></i> &nbsp;
                             <a class="footer-infor" href="">ohfreshgrocery@gmail.com</a>
                         </div>
                     </div>
-        
+
                     <div class="col col-third footer-section">
                         <h3 class="footer-title">KẾT NỐI</h3>
                         <hr class="footer-hr">
@@ -338,19 +338,19 @@
                                 <a href=""><i class="fab fa-twitter socials-list-icon"></i></a>
                             </div>
                         </div>
-        
+
                         <h3 class="footer-title">PHƯƠNG THỨC THANH TOÁN</h3>
                         <hr class="footer-hr">
                         <div class="footer-content">
                             <div class="payment-list">
-                                    <img src="/assets/img/payment/dollars.png">
-                                    <img src="/assets/img/payment/ic_momo.png">
-                                    <img src="/assets/img/payment/ic_VNPay.png">
-                                    <img src="/assets/img/payment/ic_zalopay.png">
+                                <img src="/assets/img/payment/dollars.png">
+                                <img src="/assets/img/payment/ic_momo.png">
+                                <img src="/assets/img/payment/ic_VNPay.png">
+                                <img src="/assets/img/payment/ic_zalopay.png">
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col col-third footer-section">
                         <h3 class="footer-title">THÔNG TIN KHUYẾN MÃI</h3>
                         <hr class="footer-hr">
@@ -360,7 +360,7 @@
                             </div>
                             <div>
                                 <input type="text" name="" placeholder="Thắc mắc hoặc đóng góp ý kiến (nếu có)" id="" class="form-control form-control-fb">
-                            </div>    
+                            </div>
                             <input class="form-send" type="submit" value="Gửi">
                         </div>
                     </div>
@@ -462,7 +462,6 @@
             <div class="modal-body">
 
                 <label for="quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
                     Vui lòng chọn khu vực mua sắm của bạn
                 </label>
 
@@ -479,46 +478,69 @@
                     </div>
                 </div>
 
-                <button class="confirm">
-                    Xác nhận
-                    <i class="ti-check"></i>
-                </button>
+                <div class="confirm">
+                    <button>Xác nhận</button>
+                </div>
+            </div>
 
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- Js FOR POP-UP START -->
+
+    <script>
+        // Js FOR POP-UP START
+        const slLocation = document.querySelector('.js-select-location')
+
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showLocationPopup() {
+            modal.classList.add('open')
+        }
+
+        function hideLocationPopup() {
+            modal.classList.remove('open')
+        }
+
+        slLocation.addEventListener('click', showLocationPopup)
+
+        modalClose.addEventListener('click', hideLocationPopup)
+
+        modal.addEventListener('click', hideLocationPopup)
+
+        modalContainer.addEventListener('click', function(event) {
+                event.stopPropagation()
+            })
+            // Js FOR POP-UP END
+    </script>
+    <!-- Js FOR POP-UP END -->
+
+
+    <!-- MissPassword-Popup START-->
+    <div class="modal js-modal-misspass">
+        <div class="misspass-modal-container js-misspass-modal-container">
+            <div class="modal-close js-modal-close" style="color: rgb(39, 39, 39);">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="misspass-modal-body">
+                <p class="popup-title">CẤP LẠI MẬT KHẨU</p>
+                <div class="input-wrapper">
+                    <input type="text" id="" placeholder="Số điện thoại/Email của bạn">
+                </div>
+            </div>
+
+            <div class="confirm">
+                <button>Xác nhận</button>
             </div>
         </div>
-
-
-        <!-- Js FOR POP-UP START -->
-
-        <script>
-            // Js FOR POP-UP START
-            const slLocation = document.querySelector('.js-select-location')
-
-            const modal = document.querySelector('.js-modal')
-            const modalClose = document.querySelector('.js-modal-close')
-            const modalContainer = document.querySelector('.js-modal-container')
-
-            function showLocationPopup() {
-                modal.classList.add('open')
-            }
-
-            function hideLocationPopup() {
-                modal.classList.remove('open')
-            }
-
-            slLocation.addEventListener('click', showLocationPopup)
-
-            modalClose.addEventListener('click', hideLocationPopup)
-
-            modal.addEventListener('click', hideLocationPopup)
-
-            modalContainer.addEventListener('click', function(event) {
-                    event.stopPropagation()
-                })
-                // Js FOR POP-UP END
-        </script>
-        <!-- Js FOR POP-UP END -->
-
+    </div>
+    <!-- MissPassword-Popup END-->
 
 
 </body>

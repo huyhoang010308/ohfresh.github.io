@@ -109,7 +109,8 @@
     padding: 15px 0;
 }
 
-.info-body input, select {
+.info-body input,
+select {
     height: 45px;
     font-size: 16px;
     border-radius: 20px;
@@ -118,7 +119,8 @@
     outline: none;
 }
 
-.info-body input:focus, select:focus {
+.info-body input:focus,
+select:focus {
     height: 45px;
     font-size: 16px;
     border-radius: 20px;
@@ -135,9 +137,9 @@
 
 .information-form {
     display: block;
-    -moz-appearance:none; 
-    -webkit-appearance:none; 
-    appearance:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     background-image: url('/assets/font-awesome/svgs/solid/angle-down.svg');
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
@@ -160,7 +162,9 @@
     cursor: pointer;
 }
 
+
 /* The container */
+
 .container {
     position: relative;
     padding-left: 30px;
@@ -174,14 +178,18 @@
     user-select: none;
 }
 
+
 /* Hide the browser's default radio button */
+
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
+
 /* Create a custom radio button */
+
 .checkmark {
     position: absolute;
     left: 0px;
@@ -193,31 +201,41 @@
     border-radius: 50%;
 }
 
+
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+
+.container:hover input~.checkmark {
     background-color: white;
     border: 1px solid #00B761;
 }
+
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+
+.container input:checked~.checkmark {
     background-color: white;
     border: 1px solid #00B761;
 }
 
+
 /* Create the indicator (the dot/circle - hidden when not checked) */
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
+
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+
+.container input:checked~.checkmark:after {
     display: block;
 }
 
+
 /* Style the indicator (dot/circle) */
+
 .container .checkmark:after {
     top: 4px;
     left: 4px;
@@ -233,8 +251,81 @@
 }
 
 .forget {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--primary_green);
     text-align: right;
+    font-weight: 600;
 }
 
+
+/* MissPassword Popup STRART */
+
+.modal-misspass {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.misspass-modal-container {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    min-height: 215px;
+    max-width: calc(100% - 40px);
+    animation: modalFadeIn ease 0.5s;
+    border-radius: 10px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.misspass-modal-body .popup-title {
+    line-height: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.input-wrapper input {
+    height: 45px;
+    width: 85%;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: 1px solid var(--light-gray);
+    outline: none;
+}
+
+.misspass-modal-body input:focus {
+    border: 1px solid var(--primary_green);
+}
+
+.misspass-modal-container .confirm button {
+    width: 10rem;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+
+/* MissPassword Popup END */
