@@ -153,14 +153,31 @@
                         </div>
                         <div>49.000 VNĐ</div>
                         <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="1" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
+                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue1()">-</button>
+                            <input type="text" value="1" readonly class="quantity-input" id="quantity">
+                            <button class="quantity-increase" id="increase" onclick="increaseValue1()">+</button>
                         </div>
                         <div>49.000 VNĐ</div>
                         <div>
                             <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
+
+                        <script>
+                            function increaseValue1() {
+                                var value = parseInt(document.getElementById('quantity').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value++;
+                                document.getElementById('quantity').value = value;
+                            }
+
+                            function decreaseValue1() {
+                                var value = parseInt(document.getElementById('quantity').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value < 1 ? value = 1 : '';
+                                value--;
+                                document.getElementById('quantity').value = value;
+                            }
+                        </script>
                     </div>
                     <div class="line"></div>
 
@@ -175,14 +192,31 @@
                         </div>
                         <div>19.000 VNĐ</div>
                         <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="2" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
+                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue2()">-</button>
+                            <input type="text" value="1" readonly class="quantity-input" id="quantity2">
+                            <button class="quantity-increase" id="increase" onclick="increaseValue2()">+</button>
                         </div>
                         <div>38.000 VNĐ</div>
                         <div>
                             <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
+
+                        <script>
+                            function increaseValue2() {
+                                var value = parseInt(document.getElementById('quantity2').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value++;
+                                document.getElementById('quantity2').value = value;
+                            }
+
+                            function decreaseValue2() {
+                                var value = parseInt(document.getElementById('quantity2').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value < 1 ? value = 1 : '';
+                                value--;
+                                document.getElementById('quantity2').value = value;
+                            }
+                        </script>
                     </div>
                     <div class="line"></div>
 
@@ -197,14 +231,31 @@
                         </div>
                         <div>99.000 VNĐ</div>
                         <div class="quantity-box">
-                            <button class="quantity-decrease">-</button>
-                            <input type="text" value="1" readonly class="quantity-input">
-                            <button class="quantity-increase">+</button>
+                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue3()">-</button>
+                            <input type="text" value="1" readonly class="quantity-input" id="quantity3">
+                            <button class="quantity-increase" id="increase" onclick="increaseValue3()">+</button>
                         </div>
                         <div>99.000 VNĐ</div>
                         <div>
                             <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
+
+                        <script>
+                            function increaseValue3() {
+                                var value = parseInt(document.getElementById('quantity3').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value++;
+                                document.getElementById('quantity3').value = value;
+                            }
+
+                            function decreaseValue3() {
+                                var value = parseInt(document.getElementById('quantity3').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value < 1 ? value = 1 : '';
+                                value--;
+                                document.getElementById('quantity3').value = value;
+                            }
+                        </script>
                     </div>
                     <div class="line"></div>
                 </div>
@@ -229,7 +280,7 @@
                                 <input type="text" placeholder="Nhập vào mã giảm giá" id="input-voucher" onkeyup="changeState();">
                             </div>
                             <div>
-                                <input type="button" value="ÁP DỤNG" id="apply" disabled>
+                                <input type="button" value="ÁP DỤNG" id="apply" disabled="disabled">
                                 </button>
                             </div>
                         </div>
@@ -240,11 +291,12 @@
                             var val = document.getElementById('input-voucher').value;
                             if(val.length>0) {
                                 document.getElementById('apply').disabled='';
-                                document.getElementById('apply').style.backgroundColor = "#00B761";
+                                //document.getElementById('apply').style.backgroundColor = "#00B761";
                             }
                             else {
                                 document.getElementById('apply').disabled='disabled';
-                                document.getElementById('apply').style.backgroundColor = "#C8C8D5";
+                                //document.getElementById('apply').style.backgroundColor = "#C8C8D5";
+                                document.getElementById('apply').style.color = "white";
                             }
                         }
                     </script>
