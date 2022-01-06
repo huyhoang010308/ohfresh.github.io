@@ -224,14 +224,27 @@
                         </div>
                         <div class="voucher-info">
                             <div>
-                                <input type="text" placeholder="Nhập vào mã giảm giá" class="input-voucher">
+                                <input type="text" placeholder="Nhập vào mã giảm giá" id="input-voucher" onkeyup="changeState();">
                             </div>
                             <div>
-                                <input type="button" value="ÁP DỤNG" class="apply">
+                                <input type="button" value="ÁP DỤNG" id="apply" disabled>
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <script type="text/javascript">
+                        function changeState() {
+                            var val = document.getElementById('input-voucher').value;
+                            if(val.length>0) {
+                                document.getElementById('apply').disabled='';
+                                document.getElementById('apply').style.backgroundColor = "#00B761";
+                            }
+                            else {
+                                document.getElementById('apply').disabled='disabled';
+                            }
+                        }
+                    </script>
 
                     <hr class="divider">
 

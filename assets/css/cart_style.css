@@ -153,9 +153,10 @@
     grid-template-columns: 3fr 1fr;
 }
 
-.input-voucher {
+#input-voucher {
     border-radius: 20px 0 0 20px;
-    border: 2px solid var(--primary_green);
+    border: 1px solid var(--light-gray);
+    border-right: none;
     background-color: white;
     color: black;
     font-style: bold;
@@ -166,12 +167,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.input-voucher::placeholder {
+#input-voucher:focus {
+    border: 1px solid var(--primary_green);
+}
+
+#input-voucher::placeholder {
+    border: var(--primary_green);
     color: gray;
 }
 
-.apply {
-    background-color: var(--primary_green);
+#apply {
+    background-color: var(--light-gray);
     font-weight: bolder;
     color: white;
     border: none;
