@@ -1419,6 +1419,10 @@ input:focus~.left {
     text-align: center;
 }
 
+.mgbt {
+    margin-bottom: 40px;
+}
+
 .new-product-border {
     border-radius: 55px;
     margin-top: px;
