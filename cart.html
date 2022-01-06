@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/img/LOGO.svg" type="img/x-icon" />
+    <link rel="icon" href="assets/img/LOGO.svg" type="img/x-icon" />
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
     <title>Giỏ hàng</title>
 
@@ -21,7 +21,7 @@
         <div id="header">
             <div id="container1">
                 <div id="logo">
-                    <a href="/index.html"><img src="./assets/img/LOGO.png" alt="Oh! Fresh" title="Oh! Fresh" id="logo"></a>
+                    <a href="index.html"><img src="assets/img/LOGO.png" alt="Oh! Fresh" title="Oh! Fresh" id="logo"></a>
                 </div>
 
                 <div class="spacer"></div>
@@ -77,7 +77,7 @@
                     </div>
 
                     <div class="shopping-cart">
-                        <a href="/cart.html">
+                        <a href="cart.html">
                             <div class="icon"><i class="fas fa-shopping-bag"></i></div>
                             <span>Giỏ hàng</span>
                         </a>
@@ -96,7 +96,7 @@
             <div id="container2">
                 <div class="nav-category">
                     <a href="#">
-                        <img src="./assets/img/icon/ic_category.svg" alt="">
+                        <img src="assets/img/icon/ic_category.svg" alt="">
                         <span id="select">Danh mục sản phẩm</span>
                         <i class="fas fa-chevron-down" style="margin-left: 2%;"></i>
                     </a>
@@ -106,7 +106,7 @@
 
                 <div id="navigation">
                     <ul id="nav">
-                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="promotion.html">Khuyến mãi</a></li>
                         <li><a href="blogList.html">Blog</a></li>
                         <li><a href="AboutUs.html">Về chúng tôi</a></li>
@@ -117,7 +117,7 @@
                 <div class="spacer"></div>
 
                 <div class="hotline">
-                    <img src="./assets/img/icon/ic_hotline.svg" alt="Hotline" class="hotline-icon">
+                    <img src="assets/img/icon/ic_hotline.svg" alt="Hotline" class="hotline-icon">
                     <a href="tel:19004455" title="Hotline">19004455</a>
                 </div>
 
@@ -145,7 +145,7 @@
                     <div class="cart-product">
                         <div class="cart-info" style="text-align: left;">
                             <div>
-                                <img src="/assets/img/Product/Apple.png" width="100%">
+                                <img src="assets/img/Product/Apple.png" width="100%">
                             </div>
                             <div class="product-description">
                                 <b>Táo đỏ New Zealand</b><br> 0.5KG
@@ -159,7 +159,7 @@
                         </div>
                         <div>49.000 VNĐ</div>
                         <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
+                            <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
                     </div>
                     <div class="line"></div>
@@ -167,7 +167,7 @@
                     <div class="cart-product">
                         <div class="cart-info" style="text-align: left;">
                             <div>
-                                <img src="/assets/img/Product/Carrot.png" width="100%">
+                                <img src="assets/img/Product/Carrot.png" width="100%">
                             </div>
                             <div class="product-description">
                                 <b>Cà rốt Đà Lạt</b><br> 0.5KG
@@ -181,7 +181,7 @@
                         </div>
                         <div>38.000 VNĐ</div>
                         <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
+                            <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
                     </div>
                     <div class="line"></div>
@@ -189,7 +189,7 @@
                     <div class="cart-product">
                         <div class="cart-info" style="text-align: left;">
                             <div>
-                                <img src="/assets/img/Product/Blueberry.png" width="100%">
+                                <img src="assets/img/Product/Blueberry.png" width="100%">
                             </div>
                             <div class="product-description">
                                 <b>Việt quất Úc</b><br> 1KG
@@ -203,7 +203,7 @@
                         </div>
                         <div>99.000 VNĐ</div>
                         <div>
-                            <img src="/assets/img/icon/ic_trash.png" style="width: 25px">
+                            <img src="assets/img/icon/ic_trash.png" style="width: 25px">
                         </div>
                     </div>
                     <div class="line"></div>
@@ -244,6 +244,7 @@
                             }
                             else {
                                 document.getElementById('apply').disabled='disabled';
+                                document.getElementById('apply').style.backgroundColor = "#C8C8D5";
                             }
                         }
                     </script>
@@ -275,7 +276,7 @@
                                 <p style="margin: 5% 0">(Đã bao gồm thuế VAT)</p>
                             </div>
                         </div>
-                        <a href="/checkout.html">
+                        <a href="checkout.html">
                             <input type="button" value="TIẾN HÀNH THANH TOÁN" class="process">
                         </a>
                     </div>
@@ -320,8 +321,8 @@
                     </div>
 
                     <div class="col col-four footer-section" style="text-align: center; padding-top: 30px;">
-                        <img src="/assets/img/BCT.png" alt="Bộ công thương" width="70%">
-                        <img src="/assets/img/duns.png" alt="Bộ công thương" width="30%">
+                        <img src="assets/img/BCT.png" alt="Bộ công thương" width="70%">
+                        <img src="assets/img/duns.png" alt="Bộ công thương" width="30%">
                     </div>
                 </div>
                 <br>
@@ -360,10 +361,10 @@
                         <hr class="footer-hr">
                         <div class="footer-content">
                             <div class="payment-list">
-                                <img src="/assets/img/payment/dollars.png">
-                                <img src="/assets/img/payment/ic_momo.png">
-                                <img src="/assets/img/payment/ic_VNPay.png">
-                                <img src="/assets/img/payment/ic_zalopay.png">
+                                <img src="assets/img/payment/dollars.png">
+                                <img src="assets/img/payment/ic_momo.png">
+                                <img src="assets/img/payment/ic_VNPay.png">
+                                <img src="assets/img/payment/ic_zalopay.png">
                             </div>
                         </div>
                     </div>
