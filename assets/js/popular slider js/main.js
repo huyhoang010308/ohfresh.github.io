@@ -88,7 +88,9 @@ jQuery(document).ready(function($) {
 			navigationDot = container.find('.cd-dots .selected');
 		if(typeof n === 'undefined') n = visibleSlide.index() + 1;
 		visibleSlide.removeClass('selected');
-		container.find('.cd-item-wrapper li').eq(n).addClass('selected').removeClass('move-right hover').prevAll().removeClass('move-right move-left focus-on-right').addClass('hide-left').end().prev().removeClass('hide-left').addClass('move-left').end().next().addClass('move-right');
+		container.find('.cd-item-wrapper li').eq(n).addClass('selected').removeClass('move-right hover').prevAll().
+			removeClass('move-right move-left focus-on-right').addClass('hide-left').end().prev().removeClass('hide-left').
+			addClass('move-left').end().next().addClass('move-right');
 		navigationDot.removeClass('selected')
 		dots.eq(n).addClass('selected');
 	}
@@ -98,7 +100,9 @@ jQuery(document).ready(function($) {
 			navigationDot = container.find('.cd-dots .selected');
 		if(typeof n === 'undefined') n = visibleSlide.index() - 1;
 		visibleSlide.removeClass('selected focus-on-left');
-		container.find('.cd-item-wrapper li').eq(n).addClass('selected').removeClass('move-left hide-left hover').nextAll().removeClass('hide-left move-right move-left focus-on-left').end().next().addClass('move-right').end().prev().removeClass('hide-left').addClass('move-left');
+		container.find('.cd-item-wrapper li').eq(n).addClass('selected').removeClass('move-left hide-left hover').nextAll().
+			removeClass('hide-left move-right move-left focus-on-left').end().next().addClass('move-right').
+			end().prev().removeClass('hide-left').addClass('move-left');
 		navigationDot.removeClass('selected');
 		dots.eq(n).addClass('selected');
 	}

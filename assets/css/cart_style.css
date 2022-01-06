@@ -177,7 +177,7 @@
 }
 
 #apply {
-    background-color: var(--light-gray);
+    background-color: var(--primary_green);
     font-weight: bolder;
     color: white;
     border: none;
@@ -190,6 +190,16 @@
     width: 100%;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+}
+
+#apply:hover {
+    background-color: var(--light-gray);
+}
+
+#apply:disabled {
+    background-color: var(--light-gray);
+    cursor: not-allowed;
+    color: white;
 }
 
 .order-price-info {
