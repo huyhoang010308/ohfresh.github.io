@@ -730,3 +730,7 @@ body.active .wrapper .section {
     margin-left: 0;
     width: 100%;
 }
+
+.green {
+    color: #00B761;
+}
