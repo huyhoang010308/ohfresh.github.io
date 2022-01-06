@@ -88,7 +88,7 @@ filter{
 
 .right-row {
     padding: 30px 40px;
-    margin-top: -52px;
+    margin-top: -50px;
     font-weight: bold;
     clear: right;
     width: 100%;
@@ -121,8 +121,11 @@ filter{
     color: black;
 }
 
-.list-group-item:hover a {
+.list-group-item:hover  {
     color: #00B761;
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
 
 .list-group-item a {
@@ -204,6 +207,12 @@ filter{
     transition: 0.2s ease-in-out;
     margin-bottom: 10px;
     margin: 0px -50px 10px;
+}
+
+.product-rating:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
 
 .product-img:hover {

@@ -102,5 +102,11 @@ body
     color: #fff;
     cursor: pointer;
 }
+
+.info:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
 /*end*/
 
