@@ -36,6 +36,7 @@ $("#navright").click(function(){
 		});
 	}
 });
+
 $("#navleft").click(function(){
 	if($(".active").prev().hasClass("slideItems"))
 	{
