@@ -32,6 +32,7 @@ body{
 }
 .img-showcase img{
     min-width: 100%;
+    
 }
 .img-select{
     display: flex;
@@ -130,6 +131,7 @@ body{
 }
 .purchase-info .btn-buy-now:hover{
     opacity: 0.9;
+    cursor: pointer;
 }
 .social-links{
     display: flex;
@@ -188,7 +190,7 @@ body{
 }
 
 .button-send{
-        z-index: 1;
+        z-index: 0;
         position: relative;
         font-size: inherit;
         font-family: inherit;

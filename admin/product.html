@@ -60,9 +60,40 @@
 
                 <div class="card table-section">
                     <div class="card-body">
-                        <h5 class="card-title">Latest products</h5>
+                        <div class="row gutter-set">
+                            <div class="func-search me-auto">
+                                    <input type="text" name="" placeholder="Search" class="form-control">
+                            </div>
+                            <div class="func-filter">
+                                <select class="form-select">
+                                    <option value="" selected>Status</option>
+                                    <option value="">Active</option>
+                                    <option value="">Disable</option>
+                                    <option value="">Show all</option>
+                                </select>
+                            </div>
+
+                            <div class="func-filter">
+                                <select class="form-select">
+                                    <option value="" selected>Show 20</option>
+                                    <option value="">Show 30</option>
+                                    <option value="">Show 40</option>
+                                </select>
+                            </div>
+                        </div>
+                            <hr>
                         <div class="">
                             <table class="table-report table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>ProductID</td>
+                                        <td>Name</td>
+                                        <td>Last Update</td>
+                                        <td>Price</td>
+                                        <td>Status</td>
+                                        <td>Inventory</td>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>#OF01</td>
