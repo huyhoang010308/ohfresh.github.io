@@ -6,27 +6,27 @@
 
 @font-face {
     font-family: SVNDeadheadScript;
-    src: url(assets/font/SVNDeadheadScript.ttf);
+    src: url(/assets/font/SVNDeadheadScript.ttf);
 }
 
 @font-face {
     font-family: RICCASCRIPT;
-    src: url(assets/font/RICCASCRIPT.ttf);
+    src: url(/assets/font/RICCASCRIPT.ttf);
 }
 
 @font-face {
     font-family: BRANNBOLLNY;
-    src: url(assets/font/BRANNBOLLNY.ttf);
+    src: url(/assets/font/BRANNBOLLNY.ttf);
 }
 
 @font-face {
     font-family: Lobster;
-    src: url(assets/font/SVN-Lobster.ttf);
+    src: url(/assets/font/SVN-Lobster.ttf);
 }
 
 @font-face {
     font-family: VnThuPhap2;
-    src: url(assets/font/VnThuPhap2.ttf);
+    src: url(/assets/font/VnThuPhap2.ttf);
 }
 
 html {
