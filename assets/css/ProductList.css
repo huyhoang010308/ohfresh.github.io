@@ -34,11 +34,20 @@
 }
 
 .price-filter {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    margin-left: 20px;
-    margin-left: 13px; 
-    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 20px;
+    width: 75%;
+    display: block;
+    margin: 13px;
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    background-image: url('/assets/font-awesome/svgs/solid/angle-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    outline: none;
 }
 
 .filter-heading{
