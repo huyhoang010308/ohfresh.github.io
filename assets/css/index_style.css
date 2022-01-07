@@ -267,6 +267,62 @@ input:focus~.left {
     color: var(--primary_gray);
 }
 
+#container1 .subnav {
+    z-index: 3;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
+    display: none;
+}
+
+#container1 .subnav::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 1rem;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFF;
+    transform: rotate(45deg);
+}
+
+#container1 .my-account .subnav {
+    width: 12rem;
+    right: 0;
+}
+
+#container1 .my-account .subnav li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#container1 .my-account .subnav li:hover {
+    font-weight: 500;
+    color: var(--primary_green);
+}
+
+#container1 .notification .subnav {
+    width: 25rem;
+    min-height: 28rem;
+    right: 16.5rem;
+}
+
+#container1 .subnav li {
+    border-bottom: none;
+}
+
+#container1 .my-account:hover .subnav {
+    display: block !important;
+}
+
+#container1 .notification:hover .subnav {
+    display: block !important;
+}
+
 #container2 {
     height: 30px;
     margin-top: 15px;
@@ -313,25 +369,26 @@ input:focus~.left {
     margin-right: 5px;
 }
 
-#container2 .subnav {
+#container2 .nav-category .subnav {
+    z-index: 3;
+    position: absolute;
+    width: 15rem;
+    margin-top: 0.5rem;
     background-color: white;
-    margin-top: 8%;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 0;
     box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
     display: none;
 }
 
-.subnav.showSubNav {
+#container2 .nav-category:hover .subnav {
     display: block !important;
 }
 
-#container2 .subnav li {
+.subnav li {
     /* margin: 10px 0; */
     list-style-type: none;
     padding: 10px;
-    border-bottom: 0.5px solid rgba(172, 172, 172, 0.3);
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -339,14 +396,14 @@ input:focus~.left {
     border-bottom: none;
 }
 
-#container2 .subnav li a {
+.subnav li a {
     display: block;
     height: 100%;
     font-weight: 500;
     transition: 0.1s ease;
 }
 
-#container2 .subnav li:hover {
+.subnav li:hover {
     background-color: #e9ecef;
 }
 
@@ -479,7 +536,7 @@ input:focus~.left {
 
 #slider img {
     width: 100%;
-    /* height: 500px; */
+    height: 500px;
 }
 
 .slides {
@@ -2110,3 +2167,6 @@ input::placeholder {
 
 
 /* css for location pop-up end*/
+
+
+/* CSS FOR DROPDOWN NOTIFICATION */
