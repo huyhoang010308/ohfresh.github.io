@@ -173,7 +173,7 @@
                             function decreaseValue1() {
                                 var value = parseInt(document.getElementById('quantity').value, 10);
                                 value = isNaN(value) ? 0 : value;
-                                value < 1 ? value = 1 : '';
+                                value < 2 ? value = 2 : '';
                                 value--;
                                 document.getElementById('quantity').value = value;
                             }
@@ -193,7 +193,7 @@
                         <div>19.000 VNĐ</div>
                         <div class="quantity-box">
                             <button class="quantity-decrease" id="decrease" onclick="decreaseValue2()">-</button>
-                            <input type="text" value="1" readonly class="quantity-input" id="quantity2">
+                            <input type="text" value="2" readonly class="quantity-input" id="quantity2">
                             <button class="quantity-increase" id="increase" onclick="increaseValue2()">+</button>
                         </div>
                         <div>38.000 VNĐ</div>
@@ -212,7 +212,7 @@
                             function decreaseValue2() {
                                 var value = parseInt(document.getElementById('quantity2').value, 10);
                                 value = isNaN(value) ? 0 : value;
-                                value < 1 ? value = 1 : '';
+                                value < 2 ? value = 2 : '';
                                 value--;
                                 document.getElementById('quantity2').value = value;
                             }
@@ -251,7 +251,7 @@
                             function decreaseValue3() {
                                 var value = parseInt(document.getElementById('quantity3').value, 10);
                                 value = isNaN(value) ? 0 : value;
-                                value < 1 ? value = 1 : '';
+                                value < 2 ? value = 2 : '';
                                 value--;
                                 document.getElementById('quantity3').value = value;
                             }
@@ -291,12 +291,9 @@
                             var val = document.getElementById('input-voucher').value;
                             if(val.length>0) {
                                 document.getElementById('apply').disabled='';
-                                //document.getElementById('apply').style.backgroundColor = "#00B761";
                             }
                             else {
                                 document.getElementById('apply').disabled='disabled';
-                                //document.getElementById('apply').style.backgroundColor = "#C8C8D5";
-                                document.getElementById('apply').style.color = "white";
                             }
                         }
                     </script>
