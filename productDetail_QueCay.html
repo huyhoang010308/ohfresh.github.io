@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/ProductList.css">
     <link rel="stylesheet" href="assets/css/index_style.css">
+    <link rel="stylesheet" href="assets/css/productDetail_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/LOGO.svg" type="img/x-icon" />
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
-    <title>Danh sách sản phẩm</title>
+    <title>Sản Phẩm</title>
 
 </head>
 
@@ -206,223 +206,176 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="content">
-                <div class="left-row">
-                    <h1 class="heading">Danh mục</h1>
-                    <div>
-                        <div class="card-list">
-                            <div class="list-group ">                              
-                                <a href="ProductList.html" style="font-weight: bold;" >
-                                    <div class="list-group-item" href="">
-                                        Tất cả
-                                    </div>
+        <div class="card-wrapper">
+            <div>
+                <div class="card-detail">
+                    <!-- card left -->
+                    <div class="product-imgs">
+                        <div class="img-display">
+                            <div class="img-showcase">
+                                <img src="assets/img/Product/cinnamon.png" alt="apple">
+                                <img src="assets/img/Product/cinnamon.png" alt="apple">
+                                <img src="assets/img/Product/cinnamon.png" alt="apple">
+                                <img src="assets/img/Product/cinnamon.png" alt="apple">
+                            </div>
+                        </div>
+                        <div class="img-select" style="margin-top: 20px;">
+                            <div class="img-item">
+                                <a href="#" data-id="1">
+                                    <img src="assets/img/Product/cinnamon.png" alt="apple">
                                 </a>
-                               
-                                <a href="ProductListVeggies.html" >
-                                    <div class="list-group-item"  href="" style="font-weight: normal;">
-                                        Rau, củ , quả                                     
-                                    </div>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="2">
+                                    <img src="assets/img/Product/cinnamon.png" alt="apple">
                                 </a>
-
-                                <a href="ProductListFruit.html"  >
-                                    <div class="list-group-item" href="" style="font-weight: normal;">
-                                        Trái cây tươi
-                                    </div>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="3">
+                                    <img src="assets/img/Product/cinnamon.png" alt="apple">
                                 </a>
-                               
-                                <a href="ProductListCereals.html" style="font-weight: lighter;" >
-                                    <div class="list-group-item" href="" style="font-weight: normal;">
-                                        Ngũ cốc, hạt
-                                    </div>
-                                </a>
-                                
-                                <a href="ProductListMushroom.html" style="font-weight: lighter;" >
-                                    <div class="list-group-item" href="" style="font-weight: normal;">
-                                        Nấm
-                                    </div>
-                                </a>
-                                
-                                <a href="#" style="font-weight: lighter;" class="highlight">
-                                    <div class="list-group-item"  href="" style="font-weight: normal;">
-                                        Gia vị
-                                    </div>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="4">
+                                    <img src="assets/img/Product/cinnamon.png" alt="apple">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <h1 class="filter-heading">Giá sản phẩm</h1>
-                    <div>
-                        <select class="price-filter">
-                            <option value="" selected>0 - 99.000đ</option>
-                            <option value="">100.000đ - 199.000đ</option>
-                            <option value="">200.000 - 299.000</option>
-                            <option value="">Trên 300.000đ</option>
-                        </select>
-                    </div>
-                    <input type="button" value="Áp dụng" class="btn" style="margin-left: 13px; width: 100px; cursor: pointer;">
-                    <h1 class="filter-heading">Đánh giá</h1>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
+                    <!-- card right -->
+                    <div class="product-content">
+                        <h2 class="product-title">Quế Cây</h2>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.9(21)</span>
+                        </div>
 
+                        <div class="product-price">
+                            <p class="price">60.000 đ</p>
+                        </div>
 
-                <div class="right-row">
-                    <div class="tab-content row best-selling-list" id="best-selling">
-                        <div class="card-list">
-                            <div class="card-body">
-                                <table style="border-spacing: 40px;">
-                                    <tr>
-                                        <td>
-                                            <a href="productDetail_QueCay.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/cinnamon.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Quế cây</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>60.000 vnđ</del><span class="sale-price"> 49.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail_OtBot.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/chilipowder.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Ớt bột</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>90.000 vnđ</del><span class="sale-price"> 79.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail_OtDo.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/redchilli.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Ớt đỏ</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>140.000 vnđ</del><span class="sale-price">129.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/greenchilli.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Ớt xanh</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>60.000 vnđ</del><span class="sale-price">49.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/bellpepper.png" alt="" style="size: 80%" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Ớt chuông</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>140.000 vnđ</del><span class="sale-price"> 129.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/blackpepper.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Tiêu đen</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>85.000 vnđ</del><span class="sale-price"> 69.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/huongthao.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Hương thảo</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>60.000 vnđ</del><span class="sale-price">49.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/hoahoi.png" alt="" style="size: 80%" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Hoa hồi</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>140.000 vnđ</del><span class="sale-price"> 129.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="productDetail.html">
-                                                <div class="best-selling-border">
-                                                    <img src="assets/img/Product/ginger.png" alt="" class="best-selling-img">
-                                                    <div class="best-selling-body">
-                                                        <h3 class="best-selling-name">Gừng</h3>
-                                                        <p class="best-selling-unit">Đơn vị: KG</p>
-                                                        <p class="price"><del>85.000 vnđ</del><span class="sale-price"> 69.000 vnđ</span></p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div class="num-page ">
-                                    <a href="" style="padding: 10px;" class="num-page2">1</a>
-                                    <a href="" style="padding: 10px;" class="num-page2">2</a>
-                                    <a href="" style="padding: 10px;" class="num-page2">3</a>
-                                    <a href="" style="padding: 10px;" class="num-page2">4</a>
-                                    <a href="#"></a><i class="fas fa-chevron-right num-page2" style="cursor: pointer; margin-left: 10px;"></i></a>
-                                </div>
-                            </div>
+                        <div class="product-detail">
+                            <h2>Mô tả </h2>
+                            <p><b>Xuất xứ:</b> Trang trại tại Việt Nam.</p>
+                            <p><b>Công dụng:</b> Có thể nấu ăn, làm bánh, pha chế đồ uống hoặc làm nước xúc miệng, khử mùi...</p>
+                            <p><b>Khối lượng:</b> 500g</p>
+                        </div>
+
+                        <div class="purchase-info">
+                            <input type="number" min="0" value="1">
+                            <br/>
+                            <button type="button" class="btn-add-to-cart">
+                      Thêm vào giỏ hàng <i class = "fas fa-shopping-cart"></i>
+                    </button>
+                            <button type="button" class="btn-buy-now">Mua Ngay</button>
+                        </div>
+
+                        <div class="social-links">
+                            <p>Chia sẻ: </p>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
+
+                <div class="rate">
+                    <h2 class="rate-title">Đánh giá</h2>
+                    <div class="rate-details" id="rate">
+                        <table class="rate-item">
+                            <tr class="">
+                                <td>
+                                    <div class="text-center">
+                                        <img src="assets/img/Client/avatar.jpg" class="customer-img" alt="">
+                                    </div>
+                                </td>
+                                <td class="rate-content">
+                                    <h5 class="rate-name">Nguyễn Thị Linh
+                                        <span class="product-rating">
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star"></i>
+                                    <i class = "fas fa-star-half-alt"></i>
+                                    <span>4.9</span>
+                                        </span>
+                                    </h5>
+                                    <p>
+                                        Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="rate-item">
+                            <tr class="">
+                                <td>
+                                    <div class="text-center">
+                                        <img src="assets/img/Client/p2.png" class="customer-img" alt="">
+                                    </div>
+                                </td>
+                                <td class="rate-content">
+                                    <h5 class="rate-name">Bùi Thị Thu Trang
+                                        <span class="product-rating">
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <span>5</span>
+                                        </span>
+                                    </h5>
+                                    <p>
+                                        Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- rate form -->
+                        <div class="rate-form">
+                            <input class="input-text" placeholder="Nhập đánh giá">
+                            <button class="button-send">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const imgs = document.querySelectorAll('.img-select a');
+                    const imgBtns = [...imgs];
+                    let imgId = 1;
+
+                    imgBtns.forEach((imgItem) => {
+                        imgItem.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            imgId = imgItem.dataset.id;
+                            slideImage();
+                        });
+                    });
+
+                    function slideImage() {
+                        const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+                        document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+                    }
+
+                    window.addEventListener('resize', slideImage);
+                </script>
             </div>
         </div>
     </div>
 
-
     <div id="footer">
         <div class="row footer-body">
-            <div>
+            <div class="row">
                 <div class="col col-four footer-section">
                     <h3 class="footer-title">VỀ OH! FRESH</h3>
                     <hr class="footer-hr">
@@ -462,15 +415,15 @@
                 </div>
             </div>
             <br>
-            <div>
+            <div class="row">
                 <div class="col col-third footer-section">
                     <h3 class="footer-title">ĐỊA CHỈ LIÊN HỆ</h3>
                     <hr class="footer-hr">
                     <div class="footer-content">
                         <i class="fas fa-map-marker-alt"></i> &nbsp;
                         <a class="footer-infor" href="">365 Lê Văn Sỹ, Phường 12, Quận 3. <br>
-                        100 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.
-                    </a>
+                                100 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.
+                            </a>
                         <br><br>
 
                         <i class="fas fa-phone"></i> &nbsp;
@@ -520,9 +473,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
     <button class="btnScrollToTopp">
         <i class="fas fa-arrow-up"></i>
     </button>
